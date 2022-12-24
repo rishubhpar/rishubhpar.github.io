@@ -77,10 +77,10 @@
               </a>
               <br>
 
-              <strong>Rishubh Parihar</strong>
-              <strong>Ankit Dhiman</strong>
-              <strong>Tejan Karmali</strong>
-              <strong>R. Venkatesh Babu</strong>
+              <strong>Rishubh Parihar</strong>,
+              Ankit Dhiman,
+              Tejan Karmali,
+              R. Venkatesh Babu
               <br>
               <em>ACMMM</em>, 2022
               <a href="https://sites.google.com/view/flamelatentediting/">project page</a>
@@ -120,20 +120,20 @@
                 <papertitle>Hierarchical Semantic Regularization of Latent Spaces in StyleGANs</papertitle>
               </a>
               <br>
-              <strong>Tejan Karmali</strong>
-              <strong>Rishubh Parihar</strong>
-              <strong>Susmit Agrawal</strong>
-              <strong>Harsh Rangwani</strong>
-              <strong>Varun Jampani</strong>
-              <strong>Manish Singh</strong>
-              <strong>R. Venkatesh Babu</strong>
+              Tejan Karmali,
+              <strong>Rishubh Parihar</strong>,
+              Susmit Agrawal,
+              Harsh Rangwani,
+              Varun Jampani,
+              Manish Singh,
+              R. Venkatesh Babu
               <br>
               <em>ECCV</em>, 2022
               <br>
               <a href="https://sites.google.com/view/hsr-eccv22/">project page</a>
               /
               <a href="https://arxiv.org/abs/2208.03764">arXiv</a>
-              
+
               <p></p> 
               <p>
               Proposed a hierarchical regularizer during the training of StyleGAN models to induce smoothness properties in the W/W+ latent spaces. 
@@ -142,50 +142,280 @@
             </td>
           </tr>		
           
-          <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
+
+          <!-- motion type Paper --> 
+          <tr onmouseout="motiontype_stop()" onmouseover="motiontype_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='nerfsuper_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/nerf_supervision.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/nerf_supervision.jpg' width="160">
+                <div class="two" id='motiontype_image'>
+                  <img src='images/motiontype_before.jpg' width="160"></div>
+                <img src='images/motiontype_after.jpg' width="160">
               </div>
               <script type="text/javascript">
-                function nerfsuper_start() {
-                  document.getElementById('nerfsuper_image').style.opacity = "1";
+                function motiontype_start() {
+                  document.getElementById('motiontype_image').style.opacity = "1";
                 }
-
-                function nerfsuper_stop() {
-                  document.getElementById('nerfsuper_image').style.opacity = "0";
+                function motiontype_stop() {
+                  document.getElementById('motiontype_image').style.opacity = "0";
                 }
-                nerfsuper_stop()
+                motiontype_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-							<a href="http://yenchenlin.me/nerf-supervision/">
-                <papertitle>NeRF-Supervision: Learning Dense Object Descriptors from Neural Radiance Fields</papertitle>
+              <a href="https://arxiv.org/abs/2110.01015">
+                <papertitle>Spatio-Temporal Video Representation Learning via motion type classification</papertitle>
               </a>
               <br>
-              <a href="https://yenchenlin.me/">Lin Yen-Chen</a>, 
-              <a href="http://www.peteflorence.com/">Pete Florence</a>, 
-              <strong>Jonathan T. Barron</strong>,  <br>
-              <a href="https://scholar.google.com/citations?user=_BPdgV0AAAAJ&hl=en">Tsung-Yi Lin</a>, 
-              <a href="https://meche.mit.edu/people/faculty/ALBERTOR@MIT.EDU">Alberto Rodriguez</a>,
-              <a href="http://web.mit.edu/phillipi/">Phillip Isola</a>
+              <strong>Rishubh Parihar</strong>,
+              Gaurav Ramola,
+              Ranajit Saha,
+              Ravi Kini,
+              Aniket Rege,
+              Sudha Velusamy
               <br>
-              <em>ICRA</em>, 2022  
+              <em>SRVU, ICCVW</em>, 2021
               <br>
-							<a href="http://yenchenlin.me/nerf-supervision/">project page</a> / 
-							<a href="https://arxiv.org/abs/2203.01913">arXiv</a> / 
-							<a href="https://www.youtube.com/watch?v=_zN-wVwPH1s">video</a> /
-							<a href="https://github.com/yenchenlin/nerf-supervision-public">code</a> / 
-							<a href="https://colab.research.google.com/drive/13ISri5KD2XeEtsFs25hmZtKhxoDywB5y?usp=sharing">colab</a>				
-              <p></p>
-              <p>NeRF works better than RGB-D cameras or multi-view stereo when learning object descriptors.</p>
-            </td>
-          </tr>
+              <a href="https://arxiv.org/abs/2110.01015">arXiv</a>
 
+              <p></p> 
+              <p>
+                In this paper, we propose a novel approach for understanding object motions via motion type classification.
+                The proposed motion type classifier predicts a motion type for the video based on the trajectories of the objects present. 
+                Our classifier assigns a motion type for the given video from the following five primitive motion classes: linear, projectile, oscillatory, local and random. 
+                We demonstrate that the representations learned from the motion type classification generalizes well for the challenging downstream task of video retrieval. 
+                Further, we proposed a recommendation system for video playback style based on the motion type classifier predictions.
+              </p>
+            </td>
+          </tr>		
+
+
+          <!-- pixeltransformer Paper --> 
+          <tr onmouseout="pixeltransformer_stop()" onmouseover="pixeltransformer_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='pixeltransformer_image'>
+                  <img src='images/pixeltransformer_before.jpg' width="160"></div>
+                <img src='images/pixeltransformer_after.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function pixeltransformer_start() {
+                  document.getElementById('pixeltransformer_image').style.opacity = "1";
+                }
+                function pixeltransformer_stop() {
+                  document.getElementById('pixeltransformer_image').style.opacity = "0";
+                }
+                pixeltransformer_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Image enhancement using pixel-transformer </papertitle>
+              <br>
+              Ankit Dhiman,
+              <strong>Rishubh Parihar</strong>,
+              <br> 
+              <p>
+              We empirically validate a generative model - PixelTrans- former, which infers distribution of the spatial signal given a sparse set of input samples
+              ex. image from the few ob- served pixels. We tested the method under two scenarios; when sampler polls from 1.) a noisy representation and 2.) a low-frequency representation of the underlying spatial signal. Also, we evaluated the model for the different number of encoder and decoder layers. We use the Cifar10[1] dataset for all our experiments.
+              </p>
+            </td>
+          </tr>		
+
+
+          <!-- fabsoften Paper --> 
+          <tr onmouseout="fabsoften_stop()" onmouseover="fabsoften_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='fabsoften_image'>
+                  <img src='images/fabsoften_before.jpg' width="160"></div>
+                <img src='images/fabsoften_after.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function fabsoften_start() {
+                  document.getElementById('fabsoften_image').style.opacity = "1";
+                }
+                function fabsoften_stop() {
+                  document.getElementById('fabsoften_image').style.opacity = "0";
+                }
+                fabsoften_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://openaccess.thecvf.com/content_CVPRW_2020/papers/w31/Velusamy_FabSoften_Face_Beautification_via_Dynamic_Skin_Smoothing_Guided_Feathering_and_CVPRW_2020_paper.pdf">
+                <papertitle>FabSoften: Face Beautification via Dynamic Skin Smoothing, Guided
+                  Feathering, and Texture Restoration</papertitle>
+              </a>
+              <br>
+              Sudha Velusamy,
+              <strong>Rishubh Parihar</strong>,
+              Ravi Kini,               
+              Aniket Rege,
+              <br>
+              <em>NTIRE, CVPR</em>, 2020
+              <br>
+              <a href="https://openaccess.thecvf.com/content_CVPRW_2020/papers/w31/Velusamy_FabSoften_Face_Beautification_via_Dynamic_Skin_Smoothing_Guided_Feathering_and_CVPRW_2020_paper.pdf">cvf</a>
+
+              <p></p> 
+              <p>
+                We propose a real-time face softening approach that smooths blemishes in the facial skin region, followed by a wavelet band manipulation to restore
+                the underlying skin texture, which produces a highly appealing ‘beautified’ face that retains its natural appearance.
+              </p>
+            </td>
+          </tr>		
+          
+
+          <!-- makeup Paper --> 
+          <tr onmouseout="makeup_stop()" onmouseover="makeup_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='makeup_image'>
+                  <img src='images/makeup_before.jpg' width="160"></div>
+                <img src='images/makeup_after.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function makeup_start() {
+                  document.getElementById('makeup_image').style.opacity = "1";
+                }
+                function makeup_stop() {
+                  document.getElementById('makeup_image').style.opacity = "0";
+                }
+                makeup_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://dl.acm.org/doi/pdf/10.1145/3293353.3293385">
+                <papertitle>Scene Adaptive Cosmetic Makeup Transfer</papertitle>
+              </a>
+              <br>
+              <strong>Rishubh Parihar</strong>,
+              Aniket Dashpute,
+              Prem Kalra
+              <br>
+              <em>Undergrduate Thesis</em>, 
+              <br>
+              <a href="https://dl.acm.org/doi/pdf/10.1145/3293353.3293385">cvf</a>
+
+              <p></p> 
+              <p>
+                Given a source and a target image transferring makeup from the source image to the target image.
+                The transferred makeup should blend in the scene to provide natural look. To this end, we have developed
+                a complete framework which firstly relights the subject image to match the illumination of the target image. 
+                We have generated 3D face models from single image and used them for realistic relighting. Following that 
+                layer wise decomposition is done for relit source and target image and blending is done within corresponding layers
+                to transfer makeup. Finally we have additional modules in our framework to add facial accessories. 
+                As we have generated 3D models of the source and target faces we were able to add accessories directly on 3D models 
+                which resulted in natural looking output.
+              </p>
+            </td>
+          </tr>		
+          
+
+
+          <!-- climbers Project --> 
+          <tr onmouseout="climbers_stop()" onmouseover="climbers_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='climbers_image'>
+                  <img src='images/climbers_before.png' width="160"></div>
+                <img src='images/climbers_after.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function climbers_start() {
+                  document.getElementById('climbers_image').style.opacity = "1";
+                }
+                function climbers_stop() {
+                  document.getElementById('climbers_image').style.opacity = "0";
+                }
+                climbers_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://dl.acm.org/doi/pdf/10.1145/3293353.3293385">
+                <papertitle>Probabilistic creation and rendering of climbing plants</papertitle>
+              </a>
+              <br>
+              <strong>Rishubh Parihar</strong>,
+              Aniket Dashpute
+              <br>
+
+              <p></p> 
+              <p>
+              Implemented a climbing heuristic to render climbers on required objects in a scene to enhance content creation
+              for computer graphics applications. Built a graph which is a minimal abstract representation of plant for production
+              of leaves and branches. Traversed the nodes in graph with geometry with materials and textures that can be rendered
+              </p>
+            </td>
+          </tr>		
+           
+          
+
+          <!-- frog Project --> 
+          <tr onmouseout="frog_stop()" onmouseover="frog_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='frog_image'>
+                  <img src='images/frog_before.jpg' width="160"></div>
+                <img src='images/frog_after.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function frog_start() {
+                  document.getElementById('frog_image').style.opacity = "1";
+                }
+                function frog_stop() {
+                  document.getElementById('frog_image').style.opacity = "0";
+                }
+                frog_stop()
+            </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Hierarchical Modelling of 3D animatable frog and key-frame animation</papertitle> 
+              <br>
+              <strong>Rishubh Parihar</strong>,
+              Aniket Dashpute
+              <br>
+
+              <p></p> 
+              <p>
+              Modeled a frog to be represented as a hierarchical model with an articulated structure
+              Created animation module by interpolating key frames with diffuse, specular and ambient components
+              Made an interactive game with multiple frogs which run behind use controlled insects
+              </p>
+            </td>
+          </tr>		
+           
+
+          <!-- raytracer Project --> 
+          <tr onmouseout="raytracer_stop()" onmouseover="raytracer_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='raytracer_image'>
+                  <img src='images/raytracer_before.jpg' width="160"></div>
+                <img src='images/raytracer_after.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function raytracer_start() {
+                  document.getElementById('raytracer_image').style.opacity = "1";
+                }
+                function raytracer_stop() {
+                  document.getElementById('raytracer_image').style.opacity = "0";
+                }
+                raytracer_stop()
+            </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Recursive ray tracer for rendering simplistic scenes</papertitle>
+              <br>
+              <strong>Rishubh Parihar</strong>,
+              Aniket Dashpute
+              <br>
+
+              <p></p> 
+              <p>
+                Implemented recursive ray tracing to generate an image of virtually generated 3D model by tracing path of light through pixels
+                Implemented global illumination model with reflection, refraction & shadows and local illumination model with diffuse, specular and ambient components
+              </p>
+            </td>
+          </tr>		
+            
 			    <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()"  bgcolor="#ffffd0">
 			      <td style="padding:20px;width:25%;vertical-align:middle">
 			        <div class="one">
