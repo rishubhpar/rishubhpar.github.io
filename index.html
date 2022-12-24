@@ -177,7 +177,6 @@
               <em>SRVU, ICCVW</em>, 2021
               <br>
               <a href="https://arxiv.org/abs/2110.01015">arXiv</a>
-
               <p></p> 
               <p>
                 In this paper, we propose a novel approach for understanding object motions via motion type classification.
@@ -189,80 +188,6 @@
             </td>
           </tr>		
 
-
-          <!-- pixeltransformer Paper --> 
-          <tr onmouseout="pixeltransformer_stop()" onmouseover="pixeltransformer_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='pixeltransformer_image'>
-                  <img src='images/pixeltransformer_before.png' width="160"></div>
-                <img src='images/pixeltransformer_after.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function pixeltransformer_start() {
-                  document.getElementById('pixeltransformer_image').style.opacity = "1";
-                }
-                function pixeltransformer_stop() {
-                  document.getElementById('pixeltransformer_image').style.opacity = "0";
-                }
-                pixeltransformer_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>Image enhancement using pixel-transformer </papertitle>
-              <br>
-              Ankit Dhiman,
-              <strong>Rishubh Parihar</strong>,
-              <br> 
-              <p>
-              We empirically validate a generative model - PixelTrans- former, which infers distribution of the spatial signal given a sparse set of input samples
-              ex. image from the few ob- served pixels. We tested the method under two scenarios; when sampler polls from 1.) a noisy representation and 2.) a low-frequency representation of the underlying spatial signal. Also, we evaluated the model for the different number of encoder and decoder layers. We use the Cifar10[1] dataset for all our experiments.
-              </p>
-            </td>
-          </tr>		
-
-
-          <!-- fabsoften Paper --> 
-          <tr onmouseout="fabsoften_stop()" onmouseover="fabsoften_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='fabsoften_image'>
-                  <img src='images/fabsoften_before.png' width="160"></div>
-                <img src='images/fabsoften_after.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function fabsoften_start() {
-                  document.getElementById('fabsoften_image').style.opacity = "1";
-                }
-                function fabsoften_stop() {
-                  document.getElementById('fabsoften_image').style.opacity = "0";
-                }
-                fabsoften_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://openaccess.thecvf.com/content_CVPRW_2020/papers/w31/Velusamy_FabSoften_Face_Beautification_via_Dynamic_Skin_Smoothing_Guided_Feathering_and_CVPRW_2020_paper.pdf">
-                <papertitle>FabSoften: Face Beautification via Dynamic Skin Smoothing, Guided
-                  Feathering, and Texture Restoration</papertitle>
-              </a>
-              <br>
-              Sudha Velusamy,
-              <strong>Rishubh Parihar</strong>,
-              Ravi Kini,               
-              Aniket Rege,
-              <br>
-              <em>NTIRE, CVPR</em>, 2020
-              <br>
-              <a href="https://openaccess.thecvf.com/content_CVPRW_2020/papers/w31/Velusamy_FabSoften_Face_Beautification_via_Dynamic_Skin_Smoothing_Guided_Feathering_and_CVPRW_2020_paper.pdf">cvf</a>
-
-              <p></p> 
-              <p>
-                We propose a real-time face softening approach that smooths blemishes in the facial skin region, followed by a wavelet band manipulation to restore
-                the underlying skin texture, which produces a highly appealing ‘beautified’ face that retains its natural appearance.
-              </p>
-            </td>
-          </tr>		
-          
 
           <!-- makeup Paper --> 
           <tr onmouseout="makeup_stop()" onmouseover="makeup_start()">
@@ -291,9 +216,9 @@
               Aniket Dashpute,
               Prem Kalra
               <br>
-              <em>Undergrduate Thesis</em>, 
+              <em>Undergrduate Thesis</em>
               <br>
-              <a href="https://dl.acm.org/doi/pdf/10.1145/3293353.3293385">cvf</a>
+              <a href="https://dl.acm.org/doi/pdf/10.1145/3293353.3293385">pdf</a>
 
               <p></p> 
               <p>
@@ -307,9 +232,80 @@
                 which resulted in natural looking output.
               </p>
             </td>
-          </tr>		
-          
+          </tr>		 
 
+          <!-- fabsoften Paper --> 
+          <tr onmouseout="fabsoften_stop()" onmouseover="fabsoften_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='fabsoften_image'>
+                  <img src='images/fabsoften_before.png' width="160"></div>
+                <img src='images/fabsoften_after.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function fabsoften_start() {
+                  document.getElementById('fabsoften_image').style.opacity = "1";
+                }
+                function fabsoften_stop() {
+                  document.getElementById('fabsoften_image').style.opacity = "0";
+                }
+                fabsoften_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://openaccess.thecvf.com/content_CVPRW_2020/papers/w31/Velusamy_FabSoften_Face_Beautification_via_Dynamic_Skin_Smoothing_Guided_Feathering_and_CVPRW_2020_paper.pdf">
+                <papertitle>FabSoften: Face Beautification via Dynamic Skin Smoothing, Guided
+                  Feathering, and Texture Restoration</papertitle>
+              </a>
+              <br>
+              Sudha Velusamy,
+              <strong>Rishubh Parihar</strong>,
+              Ravi Kini,               
+              Aniket Rege
+              <br>
+              <em>NTIRE, CVPR</em>, 2020
+              <br>
+              <a href="https://openaccess.thecvf.com/content_CVPRW_2020/papers/w31/Velusamy_FabSoften_Face_Beautification_via_Dynamic_Skin_Smoothing_Guided_Feathering_and_CVPRW_2020_paper.pdf">pdf</a>
+              <p>
+                We propose a real-time face softening approach that smooths blemishes in the facial skin region, followed by a wavelet band manipulation to restore
+                the underlying skin texture, which produces a highly appealing ‘beautified’ face that retains its natural appearance.
+              </p>
+            </td>
+          </tr>		 
+
+
+          <!-- pixeltransformer Paper --> 
+          <tr onmouseout="pixeltransformer_stop()" onmouseover="pixeltransformer_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='pixeltransformer_image'>
+                  <img src='images/pixeltransformer_before.png' width="160"></div>
+                <img src='images/pixeltransformer_after.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function pixeltransformer_start() {
+                  document.getElementById('pixeltransformer_image').style.opacity = "1";
+                }
+                function pixeltransformer_stop() {
+                  document.getElementById('pixeltransformer_image').style.opacity = "0";
+                }
+                pixeltransformer_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="None">
+                <papertitle>Image enhancement using pixel-transformer </papertitle>
+              </a>
+              <br>
+              Ankit Dhiman,
+              <strong>Rishubh Parihar</strong>
+              <br> 
+              <p>
+              We empirically validate a generative model - PixelTrans- former, which infers distribution of the spatial signal given a sparse set of input samples
+              ex. image from the few ob- served pixels. We tested the method under two scenarios; when sampler polls from 1.) a noisy representation and 2.) a low-frequency representation of the underlying spatial signal. Also, we evaluated the model for the different number of encoder and decoder layers. We use the Cifar10[1] dataset for all our experiments.
+              </p>
+            </td>
+          </tr>		
 
           <!-- climbers Project --> 
           <tr onmouseout="climbers_stop()" onmouseover="climbers_start()">
@@ -330,15 +326,13 @@
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://dl.acm.org/doi/pdf/10.1145/3293353.3293385">
+              <a href="None">
                 <papertitle>Probabilistic creation and rendering of climbing plants</papertitle>
               </a>
               <br>
               <strong>Rishubh Parihar</strong>,
               Aniket Dashpute
               <br>
-
-              <p></p> 
               <p>
               Implemented a climbing heuristic to render climbers on required objects in a scene to enhance content creation
               for computer graphics applications. Built a graph which is a minimal abstract representation of plant for production
@@ -368,13 +362,13 @@
             </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="None">
                 <papertitle>Hierarchical Modelling of 3D animatable frog and key-frame animation</papertitle> 
+              </a>
               <br>
               <strong>Rishubh Parihar</strong>,
               Aniket Dashpute
               <br>
-
-              <p></p> 
               <p>
               Modeled a frog to be represented as a hierarchical model with an articulated structure
               Created animation module by interpolating key frames with diffuse, specular and ambient components
@@ -403,7 +397,9 @@
             </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="None">
                 <papertitle>Recursive ray tracer for rendering simplistic scenes</papertitle>
+              </a>
               <br>
               <strong>Rishubh Parihar</strong>,
               Aniket Dashpute
