@@ -51,7 +51,54 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-			
+
+	
+          <!-- Motion Style paper -->
+          <tr onmouseout="flame_stop()" onmouseover="flame_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='motion_image'>
+                  <img src='images/motion_style.before' width="160"></div>
+                <img src='images/motion_style_after.gif' width="160">
+              </div>
+              <script type="text/javascript">
+                function motion_start() {
+                  document.getElementById('motion_image').style.opacity = "1";
+                }
+
+                function motion_stop() {
+                  document.getElementById('motion_image').style.opacity = "0";
+                }
+                motion_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://rishubhpar.github.io/motionstyle/">
+                <papertitle>We never go out of Style: Motion Disentanglement by Subspace Decomposition of Latent Space</papertitle>
+              </a>
+              <br>
+
+              <strong>Rishubh Parihar</strong>,
+              Raghav Magazine,
+              Piyush Tiwari,
+              R. Venkatesh Babu
+              <br>
+              <em>CVPRW, AI for Content Creation Workshop,</em> 2023 
+	      <br>
+              <a href="https://rishubhpar.github.io/motionstyle/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2306.00559">arXiv</a>
+              /
+              <a href="https://youtu.be/ngqXK5VJGzo">video</a>
+              <br>
+              <p></p> 
+              <p>
+               In this work, we propose a novel method to decompose motion in videos by using a pretrained image GAN model. We discover disentangled motion subspaces in the latent space of widely used style-based GAN models that
+	       are semantically meaningful and control a single explainable motion component. The proposed method uses only a few (≈10) ground truth video sequences to obtain such subspaces. 
+              </p>
+            </td>
+          </tr>		
+
 
           <!-- FLAME paper -->
           <tr onmouseout="flame_stop()" onmouseover="flame_start()">
