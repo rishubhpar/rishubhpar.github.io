@@ -20,12 +20,15 @@
               <p style="text-align:center">
                 <name>Rishubh Parihar</name>
               </p>
-              <p> I am a second year Ph.D. student at <a href="https://iisc.ac.in/"> Indian Insitute of Science, Bangalore </a> and associated with <a href="https://val.cds.iisc.ac.in/"> Video Analytics Lab </a>. I am advised by <a href="http://cds.iisc.ac.in/faculty/venky/">Prof. Venkatesh Babu</a> from Department of Computational and Data Sciences.
+              <p style="text-align: justify;"> 
+              <font size="3"> I am a third year Ph.D. student at <a href="https://iisc.ac.in/"> Indian Insitute of Science, Bangalore </a> and associated with <a href="https://val.cds.iisc.ac.in/"> Video Analytics Lab </a>. I am advised by <a href="http://cds.iisc.ac.in/faculty/venky/">Prof. Venkatesh Babu</a> from Department of Computational and Data Sciences.
               Previously, I worked at <a ref="https://sharechat.com/">ShareChat</a> where I developed and deployed large scale machine learning algorithms for content moderation for social media platforms ShareChat and Moj. Even before that, I worked on developing computer vision solutions for smartphones at <a href="https://research.samsung.com/sri-b">Samsung Research Bangalore</a>. 
-              I graduated with Bachelor of Technology in Mathematics and Computing in 2018 from <a href="https://home.iitd.ac.in/">Indian Insitute of Technology Delhi</a>.
+              I graduated with Bachelor of Technology in Mathematics and Computing in 2018 from <a href="https://home.iitd.ac.in/">Indian Insitute of Technology Delhi</a>.</font>
               </p>
-              <p>
+              <p style="text-align: justify;"> 
+              <font size="3">
                 My research interests are <strong>Image and Video manipulation with deep generative models</strong>. Specifically, my research focus on leveraging rich priors from deep generative models for downstream image editing tasks. 
+              </font>
               </p>
               <p style="text-align:center">
                 <a href="mailto:rishubhp@iisc.ac.in">Email</a> &nbsp/&nbsp
@@ -43,23 +46,128 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
+              <heading><font size="6">Research</font></heading>
               <p>
-                Below, I list a sample of my research projects. Feel free to contact me, if you want to discuss more about of any of these works.
+                <font size="3">Below is an representative list of my research works. Feel free to contact if you find this interesting.</font>
               </p>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+
+        
+          <!-- Explore diverse attributes --> 
+          <tr onmouseout="attributediff_stop()" onmouseover="attributediff_start()">
+            <td style="padding:0px;width:30%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='attributediff_image'>
+                  <img src='images/attributediff_after.gif' width="300"></div>
+                  <img src='images/attributediff_before.gif' width="300">
+              </div>
+              <script type="text/javascript">
+                function strata_start() {
+                  document.getElementById('attributediff_image').style.opacity = "1";
+                }
+
+                function strata_stop() {
+                  document.getElementById('attributediff_image').style.opacity = "0";
+                }
+                strata_stop()
+              </script>
+            </td>
+
+            <td style="padding:60px;width:60%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2311.16052.pdf">
+                <papertitle><font size="5">Exploring Attribute Variations in Style-based GANs using Diffusion Models</font></papertitle>
+              </a>
+              <br> 
+              <font size="3">
+              Rishubh Parihar,
+              Prasanna Balaji,
+              Raghav Magazine,
+              Sarthak Vora,
+              Tejan Karmali,
+              Varun Jampani,
+              R. Venkatesh Babu
+              </font>
+              <br>
+              <strong>NeurIPS Workshop on Diffusion Models, 2023 </strong> 
+	      <br>
+              <a href="https://arxiv.org/pdf/2311.16052.pdf">arXiv</a> 
+              <br>
+              <p></p> 
+              <p style="text-align: justify;"> 
+                Existing attribute editing methods treat semantic attributes as binary, resulting in a single edit per attribute.  However, attributes such
+                 as eyeglasses, smiles, or hairstyles exhibit a vast range of diversity. In this work, we formulate the task of diverse attribute editing by 
+                 modeling the multidimensional nature of attribute edits.  We capitalize on disentangled latent spaces of pretrained GANs and train a Denoising Diffusion 
+                 Probabilistic Model (DDPM) to learn the latent distribution for diverse edits. This leads to latent subspaces that enable diverse attribute editing. 
+                 Applying diffusion in the highly compressed latent space allows us to model rich distributions of edits within limited computational resources
+              </p>
+            </td>
+          </tr>		
+
+          <!-- StrataNerF paper -->
+          <tr onmouseout="strata_stop()" onmouseover="strata_start()">
+            <td style="padding:15px;width:30%;vertical-align:center">
+              <div class="one">
+                <div class="two" id='stratan_image'>
+                  <img src='images/stratan_after.gif' width="250"></div>
+                  <img src='images/stratan_before.gif' width="250">
+              </div>
+              <script type="text/javascript">
+                function strata_start() {
+                  document.getElementById('stratan_image').style.opacity = "1";
+                }
+
+                function strata_stop() {
+                  document.getElementById('stratan_image').style.opacity = "0";
+                }
+                strata_stop()
+              </script>
+            </td>
+            <td style="padding:60px;width:60%;vertical-align:middle">
+              <a href="https://ankitatiisc.github.io/Strata-NeRF/">
+                <papertitle><font size="5">Strata-NeRF: Neural Radiance Fields for Stratified Scenes</font></papertitle>
+              </a>
+              <br>
+              <font size="3">
+              Ankit Dhiman,
+              R Srinath,
+              Harsh Rangwani,
+              Rishubh Parihar,
+              Lokesh R Boregowda,
+              Srinath Sridhar,
+              R. Venkatesh Babu
+              </font>
+              <br>
+              <Strong>ICCV, 2023</Strong>
+	      <br>
+              <a href="https://ankitatiisc.github.io/Strata-NeRF/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2308.10337">arXiv</a>
+              /
+              <a href="https://github.com/ankitatiisc/Strata-NeRF">code</a> 
+              <br>
+              <p></p> 
+              <p style="text-align: justify;"> 
+              Existing NeRF approaches concentrate on modelling a single object or a single level of a scene. However, in the real world, we may capture a 
+              scene at multiple levels, resulting in a layered capture. For example, tourists usually capture a monument’s exterior structure before capturing the inner structure.  
+              We propose Strata-NeRF, a single neural radiance field that implicitly captures a scene with multiple levels. Strata-NeRF achieves this by conditioning the 
+              NeRFs on Vector Quantized (VQ) latent representations which allow sudden changes in scene structure. 
+              </p>
+            </td>
+          </tr>		
+
+
 	
           <!-- Motion Style paper -->
           <tr onmouseout="flame_stop()" onmouseover="flame_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
+            <td style="padding:0px;width:30%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='motion_image'>
-                  <img src='images/motion_style_before.gif' width="160"></div>
-                <img src='images/motion_style_after.gif' width="160">
+                  <img src='images/motion_style_after.gif' width="300"></div>
+                <img src='images/motion_style_before.gif' width="300">  
               </div>
               <script type="text/javascript">
                 function motion_start() {
@@ -72,18 +180,19 @@
                 motion_stop()
               </script>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td style="padding:60px;width:60%;vertical-align:middle">
               <a href="https://rishubhpar.github.io/motionstyle/">
-                <papertitle>We never go out of Style: Motion Disentanglement by Subspace Decomposition of Latent Space</papertitle>
+                <papertitle><font size="5">We never go out of Style: Motion Disentanglement by Subspace Decomposition of Latent Space</font></papertitle>
               </a>
               <br>
-
-              <strong>Rishubh Parihar</strong>,
+              <font size="3">
+              Rishubh Parihar,
               Raghav Magazine,
               Piyush Tiwari,
               R. Venkatesh Babu
+              </font>
               <br>
-              <em>CVPRW, AI for Content Creation Workshop,</em> 2023 
+              <Strong>CVPRW, AI for Content Creation Workshop, 2023</Strong> 
 	      <br>
               <a href="https://rishubhpar.github.io/motionstyle/">project page</a>
               /
@@ -92,7 +201,7 @@
               <a href="https://youtu.be/ngqXK5VJGzo">video</a>
               <br>
               <p></p> 
-              <p>
+              <p style="text-align: justify;"> 
                In this work, we propose a novel method to decompose motion in videos by using a pretrained image GAN model. We discover disentangled motion subspaces in the latent space of widely used style-based GAN models that
 	       are semantically meaningful and control a single explainable motion component. The proposed method uses only a few (≈10) ground truth video sequences to obtain such subspaces. 
               </p>
@@ -102,11 +211,11 @@
 
           <!-- FLAME paper -->
           <tr onmouseout="flame_stop()" onmouseover="flame_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
+            <td style="padding:15px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='flame_image'>
-                  <img src='images/flame_after.gif' width="160"></div>
-                <img src='images/flame_before.gif' width="160">
+                  <img src='images/flame_after.gif' width="250"></div>
+                <img src='images/flame_before.gif' width="250">
               </div>
               <script type="text/javascript">
                 function flame_start() {
@@ -119,19 +228,20 @@
                 flame_stop()
               </script>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td style="padding:60px;width:60%;vertical-align:middle">
               <a href="https://sites.google.com/view/flamelatentediting/">
-                <papertitle>Everything is in the Latent Space: Attribute Style Editing and Attribute Style Manipulation
-                by StyleGAN Latent Space Exploration</papertitle>
+                <papertitle><font size="5">Everything is in the Latent Space: Attribute Style Editing and Attribute Style Manipulation
+                by StyleGAN Latent Space Exploration</font></papertitle>
               </a>
               <br>
-
-              <strong>Rishubh Parihar</strong>,
+              <font size="3">
+              Rishubh Parihar,
               Ankit Dhiman,
               Tejan Karmali,
               R. Venkatesh Babu
+              </font>
               <br>
-              <em>ACMMM</em>, 2022
+              <Strong>ACMMM, 2022</Strong>
 	      <br>
               <a href="https://sites.google.com/view/flamelatentediting/">project page</a>
               /
@@ -140,7 +250,7 @@
               <a href="https://drive.google.com/file/d/1LgKowoYnaJ5sX5TAI7heGOLhGkTbZ5qS/view">video</a>
               <br>
               <p></p> 
-              <p>
+              <p style="text-align: justify;"> 
               In this work we proposed a Few-shot Latent based Attribute Manipulation and Editing (FLAME) method, a simple yet effective framework to perform highly controlled image editing by latent space manipulation.
               FLAME can generate highly realistic attribute edits and enables us to generate diverse attribute styles such as hair-styles, trained with only a few set of image pairs. 
               </p>
@@ -150,11 +260,11 @@
       
           <!-- HSR Paper --> 
           <tr onmouseout="hsr_stop()" onmouseover="hsr_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
+            <td style="padding:15px;width:30%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='hsr_image'>
-                  <img src='images/hsr_before.png' width="160"></div>
-                <img src='images/hsr_after.png' width="160">
+                  <img src='images/hsr_before.png' width="250"></div>
+                <img src='images/hsr_after.png' width="250">
               </div>
               <script type="text/javascript">
                 function hsr_start() {
@@ -166,27 +276,28 @@
                 hsr_stop()
               </script>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td style="padding:60px;width:60%;vertical-align:middle">
               <a href="https://link.springer.com/chapter/10.1007/978-3-031-19784-0_26">
-                <papertitle>Hierarchical Semantic Regularization of Latent Spaces in StyleGANs</papertitle>
+                <papertitle><font size="5">Hierarchical Semantic Regularization of Latent Spaces in StyleGANs</font></papertitle>
               </a>
               <br>
+              <font size="3">
               Tejan Karmali,
-              <strong>Rishubh Parihar</strong>,
+              Rishubh Parihar,
               Susmit Agrawal,
               Harsh Rangwani,
               Varun Jampani,
               Manish Singh,
               R. Venkatesh Babu
+              </font>
               <br>
-              <em>ECCV</em>, 2022
+              <Strong>ECCV, 2022</Strong> 
               <br>
               <a href="https://sites.google.com/view/hsr-eccv22/">project page</a>
               /
               <a href="https://arxiv.org/abs/2208.03764">arXiv</a>
 
-              <p></p> 
-              <p>
+              <p style="text-align: justify;"> 
               Proposed a hierarchical regularizer during the training of StyleGAN models to induce smoothness properties in the W/W+ latent spaces. 
               The regularizer is implemented by guiding the intermediate features of the StyleGAN with the features from the pretrained feature extractors.
               </p>
@@ -196,11 +307,11 @@
 
           <!-- motion type Paper --> 
           <tr onmouseout="motiontype_stop()" onmouseover="motiontype_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
+            <td style="padding:15px;width:30%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='motiontype_image'>
-                  <img src='images/motiontype_before.png' width="160"></div>
-                <img src='images/motiontype_after.png' width="160">
+                  <img src='images/motiontype_before.png' width="250"></div>
+                <img src='images/motiontype_after.png' width="250">
               </div>
               <script type="text/javascript">
                 function motiontype_start() {
@@ -212,23 +323,24 @@
                 motiontype_stop()
               </script>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td style="padding:60px;width:60%;vertical-align:middle">
               <a href="https://arxiv.org/abs/2110.01015">
-                <papertitle>Spatio-Temporal Video Representation Learning via motion type classification</papertitle>
+                <papertitle><font size="5">Spatio-Temporal Video Representation Learning via motion type classification</font></papertitle>
               </a>
               <br>
-              <strong>Rishubh Parihar</strong>,
+              <font size="3">
+              Rishubh Parihar,
               Gaurav Ramola,
               Ranajit Saha,
               Ravi Kini,
               Aniket Rege,
               Sudha Velusamy
+              </font> 
               <br>
-              <em>SRVU, ICCVW</em>, 2021
+              <Strong>ICCVW - SRVU, 2021</Strong> 
               <br>
               <a href="https://arxiv.org/abs/2110.01015">arXiv</a>
-              <p></p> 
-              <p>
+              <p style="text-align: justify;"> 
                 In this paper, we propose a novel approach for understanding object motions via motion type classification.
                 The proposed motion type classifier predicts a motion type for the video based on the trajectories of the objects present. 
                 Our classifier assigns a motion type for the given video from the following five primitive motion classes: linear, projectile, oscillatory, local and random. 
@@ -241,11 +353,11 @@
 
           <!-- fabsoften Paper --> 
           <tr onmouseout="fabsoften_stop()" onmouseover="fabsoften_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
+            <td style="padding:50px;width:30%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='fabsoften_image'>
-                  <img src='images/fabsoften_before.png' width="160"></div>
-                <img src='images/fabsoften_after.png' width="160">
+                  <img src='images/fabsoften_before.png' width="200"></div>
+                <img src='images/fabsoften_after.png' width="200">
               </div>
               <script type="text/javascript">
                 function fabsoften_start() {
@@ -257,22 +369,23 @@
                 fabsoften_stop()
               </script>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td style="padding:60px;width:60%;vertical-align:middle">
               <a href="https://openaccess.thecvf.com/content_CVPRW_2020/papers/w31/Velusamy_FabSoften_Face_Beautification_via_Dynamic_Skin_Smoothing_Guided_Feathering_and_CVPRW_2020_paper.pdf">
-                <papertitle>FabSoften: Face Beautification via Dynamic Skin Smoothing, Guided
-                  Feathering, and Texture Restoration</papertitle>
+                <papertitle><font size="5">FabSoften: Face Beautification via Dynamic Skin Smoothing, Guided
+                  Feathering, and Texture Restoration</font></papertitle>
               </a>
               <br>
+              <font size="3">
               Sudha Velusamy,
-              <strong>Rishubh Parihar</strong>,
+              Rishubh Parihar,
               Ravi Kini,               
               Aniket Rege
+              </font>
               <br>
-              <em>NTIRE, CVPR</em>, 2020
+              <Strong>CVPRW - NTIRE, 2020</Strong>
               <br>
               <a href="https://openaccess.thecvf.com/content_CVPRW_2020/papers/w31/Velusamy_FabSoften_Face_Beautification_via_Dynamic_Skin_Smoothing_Guided_Feathering_and_CVPRW_2020_paper.pdf">pdf</a>
-              <p></p> 
-              <p>
+              <p style="text-align: justify;"> 
                 We propose a real-time face softening approach that smooths blemishes in the facial skin region, followed by a wavelet band manipulation to restore
                 the underlying skin texture, which produces a highly appealing ‘beautified’ face that retains its natural appearance.
               </p>
@@ -281,11 +394,11 @@
 
           <!-- makeup Paper --> 
           <tr onmouseout="makeup_stop()" onmouseover="makeup_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
+            <td style="padding:15px;width:30%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='makeup_image'>
-                  <img src='images/makeup_before.png' width="160"></div>
-                <img src='images/makeup_after.png' width="160">
+                  <img src='images/makeup_before.png' width="250"></div>
+                <img src='images/makeup_after.png' width="250">
               </div>
               <script type="text/javascript">
                 function makeup_start() {
@@ -297,21 +410,22 @@
                 makeup_stop()
               </script>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td style="padding:60px;width:60%;vertical-align:middle">
               <a href="https://dl.acm.org/doi/pdf/10.1145/3293353.3293385">
-                <papertitle>Scene Adaptive Cosmetic Makeup Transfer</papertitle>
+                <papertitle><font size="5">Scene Adaptive Cosmetic Makeup Transfer</font></papertitle>
               </a>
               <br>
-              <strong>Rishubh Parihar</strong>,
+              <font size="3">
+              Rishubh Parihar,
               Aniket Dashpute,
               Prem Kalra
+              </font>
               <br>
-              <em>Undergrduate Thesis</em>
+              <Strong>Undergrduate Thesis</Strong>
               <br>
               <a href="https://dl.acm.org/doi/pdf/10.1145/3293353.3293385">pdf</a>
 
-              <p></p> 
-              <p>
+              <p style="text-align: justify;"> 
                 Given a source and a target image transferring makeup from the source image to the target image.
                 The transferred makeup should blend in the scene to provide natural look. To this end, we have developed
                 a complete framework which firstly relights the subject image to match the illumination of the target image. 
@@ -327,11 +441,11 @@
 
           <!-- pixeltransformer Paper --> 
           <tr onmouseout="pixeltransformer_stop()" onmouseover="pixeltransformer_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
+            <td style="padding:15px;width:30%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='pixeltransformer_image'>
-                  <img src='images/pixeltransformer_before.png' width="160"></div>
-                <img src='images/pixeltransformer_after.png' width="160">
+                  <img src='images/pixeltransformer_before.png' width="250"></div>
+                <img src='images/pixeltransformer_after.png' width="250">
               </div>
               <script type="text/javascript">
                 function pixeltransformer_start() {
@@ -343,15 +457,17 @@
                 pixeltransformer_stop()
               </script>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td style="padding:60px;width:60%;vertical-align:middle">
               <a href="None">
-                <papertitle>Image enhancement using pixel-transformer </papertitle>
+                <papertitle><font size="5">Image enhancement using pixel-transformer</font></papertitle>
               </a>
               <br>
+              <font size="3">
               Ankit Dhiman,
-              <strong>Rishubh Parihar</strong>
+              Rishubh Parihar
+              </font>
               <br> 
-              <p>
+              <p style="text-align: justify;"> 
               We empirically validate a generative model - PixelTrans- former, which infers distribution of the spatial signal given a sparse set of input samples
               ex. image from the few ob- served pixels. We tested the method under two scenarios; when sampler polls from 1.) a noisy representation and 2.) a low-frequency representation of the underlying spatial signal. Also, we evaluated the model for the different number of encoder and decoder layers. We use the Cifar10[1] dataset for all our experiments.
               </p>
@@ -360,11 +476,11 @@
 
           <!-- climbers Project --> 
           <tr onmouseout="climbers_stop()" onmouseover="climbers_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
+            <td style="padding:15px;width:30%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='climbers_image'>
-                  <img src='images/climbers_before.png' width="160"></div>
-                <img src='images/climbers_after.png' width="160">
+                  <img src='images/climbers_before.png' width="250"></div>
+                <img src='images/climbers_after.png' width="250">
               </div>
               <script type="text/javascript">
                 function climbers_start() {
@@ -376,15 +492,17 @@
                 climbers_stop()
               </script>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td style="padding:60px;width:60%;vertical-align:middle">
               <a href="None">
-                <papertitle>Probabilistic creation and rendering of climbing plants</papertitle>
+                <papertitle><font size="5">Probabilistic creation and rendering of climbing plants</font></papertitle>
               </a>
               <br>
-              <strong>Rishubh Parihar</strong>,
+              <font size="3">
+              Rishubh Parihar,
               Aniket Dashpute
+              </font>
               <br>
-              <p>
+              <p style="text-align: justify;"> 
               Implemented a climbing heuristic to render climbers on required objects in a scene to enhance content creation
               for computer graphics applications. Built a graph which is a minimal abstract representation of plant for production
               of leaves and branches. Traversed the nodes in graph with geometry with materials and textures that can be rendered
@@ -396,11 +514,11 @@
 
           <!-- frog Project --> 
           <tr onmouseout="frog_stop()" onmouseover="frog_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
+            <td style="padding:15px;width:30%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='frog_image'>
-                  <img src='images/frog_before.png' width="160"></div>
-                <img src='images/frog_after.png' width="160">
+                  <img src='images/frog_before.png' width="250"></div>
+                <img src='images/frog_after.png' width="250">
               </div>
               <script type="text/javascript">
                 function frog_start() {
@@ -412,15 +530,17 @@
                 frog_stop()
             </script>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td style="padding:60px;width:60%;vertical-align:middle">
               <a href="None">
-                <papertitle>Hierarchical Modelling of 3D animatable frog and key-frame animation</papertitle> 
+                <papertitle><font size="5">Hierarchical Modelling of 3D animatable frog and key-frame animation</font></papertitle> 
               </a>
               <br>
-              <strong>Rishubh Parihar</strong>,
+              <font size="3">
+              Rishubh Parihar,
               Aniket Dashpute
+              </font>
               <br>
-              <p>
+              <p style="text-align: justify;"> 
               Modeled a frog to be represented as a hierarchical model with an articulated structure
               Created animation module by interpolating key frames with diffuse, specular and ambient components
               Made an interactive game with multiple frogs which run behind use controlled insects
@@ -431,11 +551,11 @@
 
           <!-- raytracer Project --> 
           <tr onmouseout="raytracer_stop()" onmouseover="raytracer_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
+            <td style="padding:15px;width:30%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='raytracer_image'>
-                  <img src='images/raytracer_before.png' width="160"></div>
-                <img src='images/raytracer_after.png' width="160">
+                  <img src='images/raytracer_before.png' width="250"></div>
+                <img src='images/raytracer_after.png' width="250">
               </div>
               <script type="text/javascript">
                 function raytracer_start() {
@@ -447,32 +567,35 @@
                 raytracer_stop()
             </script>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td style="padding:60px;width:60%;vertical-align:middle">
               <a href="None">
-                <papertitle>Recursive ray tracer for rendering simplistic scenes</papertitle>
+                <papertitle><font size="5">Recursive ray tracer for rendering simplistic scenes</font></papertitle>
               </a>
               <br>
-              <strong>Rishubh Parihar</strong>,
+              <font size="3">
+              Rishubh Parihar,
               Aniket Dashpute
+              </font>
               <br>
 
               <p></p> 
-              <p>
+              <p style="text-align: justify;"> 
                 Implemented recursive ray tracing to generate an image of virtually generated 3D model by tracing path of light through pixels
                 Implemented global illumination model with reflection, refraction & shadows and local illumination model with diffuse, specular and ambient components
               </p>
             </td>
           </tr>		
-          
+
+       
 
           <!-- Experience both professional and academnics -->
           <br>
           <p>
           </p>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table style="width:100%;border:0px;border-spacing:50px;border-collapse:separate;margin-right:center;margin-left:center;"><tbody>
             <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
-                <heading>Experience</heading>
+                <heading><font size="6">Experience</font></heading>
               </td>
             </tr>
           </tbody></table>
@@ -480,56 +603,37 @@
         
 
           <!-- PhD --> 
-          <tr onmouseout="phd_stop()" onmouseover="phd_start()" style="margin-top:-40px"> 
-            <td style="padding:20px;width:25%;vertical-align:middle;position:relative;left:20px">
+          <tr onmouseout="phd_stop()" onmouseover="phd_start()" style="margin-top: -20px;">
+            <td style="padding: 20px; width: 10%; vertical-align: middle; position: relative; left: 50px;">
               <div class="one">
                 <div class="two" id='iisc_logo'>
-                  <img src='images/iisc_logo.jpeg' width="100"></div>
-                <img src='images/iisc_logo.jpeg' width="100">  
+                  <img src='images/iisc_logo.jpeg' width="80"> 
+                </div>
               </div>
-              <script type="text/javascript">
-                function phd_start() {
-                  document.getElementById('iisc_logo').style.opacity = "1"; 
-                }
-                function phd_stop() {
-                  document.getElementById('iisc_logo').style.opacity = "0";
-                }
-                phd_stop()
-            </script>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle;position:relative;top:-25px">
-              <a href="None">
-                <papertitle>Indian Institute of Science</papertitle>
+            <td style="padding:0px; width: 100%; vertical-align: top; position: relative; left: -100px;">
+              <a href="None"> 
+                <papertitle><font size="4">Indian Institute of Science, Bangalore</font></papertitle>
               </a>
               <br>
-              <strong>Ph.D in Engineering, Department of Computational and Data Sciences</strong> 
+              <strong>Ph.D in Engineering, Department of Computational and Data Sciences</strong>
               <br>
               <em>August 2021 - Current</em>
             </td>
-          </tr>		  
+          </tr>
 
           
         <!-- Sharechat --> 
           <tr onmouseout="sc_stop()" onmouseover="sc_start()" style="margin-top:-40px">
-            <td style="padding:20px;width:25%;vertical-align:middle;position:relative;left:20px">
+            <td style="padding:20px;width:10%;vertical-align:middle;position:relative;left:50px">
               <div class="one">
                 <div class="two" id='sc_logo'>
-                  <img src='images/sc_logo.png' width="100"></div>
-                <img src='images/sc_logo.png' width="100">
+                  <img src='images/sc_logo.png' width="80"></div>
               </div>
-              <script type="text/javascript">
-                function sc_start() {
-                  document.getElementById('sc_logo').style.opacity = "1"; 
-                }
-                function sc_stop() {
-                  document.getElementById('sc_logo').style.opacity = "0";
-                }
-                sc_stop()
-            </script>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle;position:relative;top:-25px">
+            <td style="padding:0px;width:100%;vertical-align:top;position:relative;left:-100px">
               <a href="None">
-                <papertitle>ShareChat</papertitle>
+                <papertitle><font size="4">ShareChat</font></papertitle>
               </a>
               <br>
               <strong>Data Scientist</strong>
@@ -541,25 +645,15 @@
 
           <!-- Samsung --> 
           <tr onmouseout="samsung_stop()" onmouseover="samsung_start()" style="margin-top:-40px"> 
-            <td style="padding:20px;width:25%;vertical-align:middle;position:relative;left:20px">
+            <td style="padding:20px;width:10%;vertical-align:middle;position:relative;left:50px">
               <div class="one">
                 <div class="two" id='samsung_logo'>
-                  <img src='images/samsung_logo.png' width="100"></div>
-                <img src='images/samsung_logo.png' width="100">
+                  <img src='images/samsung_logo.png' width="80"></div>
               </div>
-              <script type="text/javascript">
-                function samsung_start() {
-                  document.getElementById('samsung_logo').style.opacity = "1";
-                }
-                function samsung_stop() {
-                  document.getElementById('samsung_logo').style.opacity = "0";
-                }
-                samsung_stop()
-            </script>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle;position:relative;top:-25px">
+            <td style="padding:0px;width:100%;vertical-align:top;position:relative;left:-100px">
               <a href="None">
-                <papertitle>Samsung Reseach India Bangalore (SRIB)</papertitle>
+                <papertitle><font size="4">Samsung Reseach India Bangalore (SRIB)</font></papertitle>
               </a>
               <br>
               <strong>Computer Vision Engineer</strong> 
@@ -570,33 +664,30 @@
 
 
           <!-- Btech --> 
-          <tr onmouseout="btech_stop()" onmouseover="btech_start()" style="margin-top:-40px"> 
-            <td style="padding:20px;width:25%;vertical-align:middle;position:relative;left:20px">
+          <tr onmouseout="samsung_stop()" onmouseover="samsung_start()" style="margin-top:-40px"> 
+            <td style="padding:20px;width:10%;vertical-align:middle;position:relative;left:50px">
               <div class="one">
-                <div class="two" id='iitd_logo'>
-                  <img src='images/iitd_logo.png' width="100"></div>
-                <img src='images/iitd_logo.png' width="100">
+                <div class="two" id='samsung_logo'>
+                  <img src='images/iitd_logo.png' width="70"></div>
               </div>
-              <script type="text/javascript">
-                function btech_start() {
-                  document.getElementById('iitd_logo').style.opacity = "1";
-                }
-                function btech_stop() {
-                  document.getElementById('iitd_logo').style.opacity = "0";
-                }
-                btech_stop()
-            </script>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle;position:relative;top:-25px">
+            <td style="padding:0px;width:100%;vertical-align:top;position:relative;left:-100px">
               <a href="None">
-                <papertitle>Indian Institute of Technology, Delhi</papertitle>
+                <papertitle><font size="4">Indian Institute of Technology, Delhi</font></papertitle>
               </a>
               <br>
-              <strong>Batchelors of Technology in Mathematics and Computing</strong> 
+              <strong>Bachelors of Technology in Mathematics and Computing</strong> 
               <br>
               <em>July 2014 - May 2018</em>
             </td>
-          </tr>		
+          </tr>		 
+
+
+          <!-- Btech --> 
+          <tr onmouseout="btech_stop()" onmouseover="btech_start()" style="margin-top:-40px"> 
+            <td style="padding:20px;width:60%;vertical-align:middle;position:relative;left:50px">
+            </td>
+          </tr>		  
 
 
     </tr>
