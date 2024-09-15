@@ -6,7 +6,7 @@
   <meta name="author" content="Rishubh Parihar">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌟</text></svg>">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦚🏍🚁</text></svg>">
   </style>
 </head>  
 
@@ -40,13 +40,13 @@
 </head>
 
 
-<body>
+<body style="background-color: whitesmoke;">
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr style="padding:0px">
-            <td style="padding:0.5%;width:65%;vertical-align:middle;">
+            <td style="padding:0%;width:55%;vertical-align:middle;">
               <p style="text-align:left; font-family: 'Montserrat', sans-serif; font-weight: 800; margin-bottom: 4px;">
                 <font size="6">
                 Rishubh Parihar
@@ -72,7 +72,7 @@
                 <a href="https://www.linkedin.com/in/rishubh-parihar?originalSubdomain=in">[X]</a>
               </p>
             </td>
-            <td style="padding:2.5%;width:50%;max-width:50%;">
+            <td style="padding-top:3%;padding-left:3%;width:50%;max-width:50%;">
               <img class="rounded-image" src="images/dp-n.jpg"> 
             </td>
           </tr>
@@ -81,15 +81,13 @@
           <tr>
             <td style="padding:0px;width:100%;vertical-align:middle">
               <p style="text-align:left; font-family: 'Montserrat', sans-serif; font-weight: 500">
-                <font size="5">
-                Reviewer
-                </font>
-                <br>
-                <br>
-                <font size="2">
+                <font size="3">Reviewer: </font>
+                <font size="2.5">
                 NeurIPS 2024, ECCV 2024, CVPR 2024, WACV 2024, ICCV 2023, CVPR 2023, ECCV 2022
                 </font>
               </p>
+              <hr>
+
               <p style="text-align:left; font-family: 'Montserrat', sans-serif; font-weight: 500">
                 <font size="5">
                 Publications
@@ -98,7 +96,6 @@
             </td>
           </tr>
         </tbody></table>
-
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:collapse;margin-right:auto;margin-left:auto;"><tbody>
           <!-- Explore diverse attributes --> 
@@ -110,18 +107,17 @@
                   <img class="rounded-image" src='images/attributediff_before.gif' width="140">
               </div>
               <script type="text/javascript">
-                function strata_start() {
+                function attributediff_start() {
                   document.getElementById('attributediff_image').style.opacity = "1";
                 }
-
-                function strata_stop() {
+                function attributediff_stop() {
                   document.getElementById('attributediff_image').style.opacity = "0";
                 }
-                strata_stop()
+              attributediff_stop()
               </script>
             </td>
 
-            <td style="padding-left:40px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:middle">
+            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:middle">
               <papertitle><font size="3">Exploring Attribute Variations in Style-based GANs using Diffusion Models</font></papertitle>
               <br> 
               <font size="2">
@@ -154,7 +150,7 @@
           </tr>		
 
           <!-- Precise Control -->
-          <tr onmouseout="strata_stop()" onmouseover="starta_start()">
+          <tr onmouseout="precise_stop()" onmouseover="precise_start()">
           <td style="padding-top:20;padding-bottom:20;width:20%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='pc_image'>
@@ -162,18 +158,17 @@
                   <img class="rounded-image" src='images/precise-ctrl-after.png' width="140">
               </div>
               <script type="text/javascript">
-                function strata_start() {
-                  document.getElementById('pc_image').style.opacity = "1";
-                }
-
-                function strata_stop() {
+                function precise_start() {
                   document.getElementById('pc_image').style.opacity = "0";
                 }
-                strata_stop()
+                function precise_stop() {
+                  document.getElementById('pc_image').style.opacity = "1";
+                }
+                precise_stop()
               </script>
             </td>
 
-            <td style="padding-left:40px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:middle">
+            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:middle">
               <papertitle><font size="3">PreciseControl: Enhancing Text-to-Image Diffusion Models with Fine-Grained Attribute Control</font></papertitle>
               <br> 
               <font size="2">
@@ -202,26 +197,25 @@
 
 
           <!-- Text2Place -->
-          <tr onmouseout="strata_stop()" onmouseover="starta_start()">
+          <tr onmouseout="text2place_stop()" onmouseover="text2place_start()">
             <td style="padding-top:20;padding-bottom:20;width:20%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='pc_image'>
+                <div class="two" id='personscene_image'>
                   <img class="rounded-image" src='images/person-scene-before.png' width="140"></div>
                   <img class="rounded-image" src='images/person-scene-after.png' width="140">
               </div>
               <script type="text/javascript">
-                function strata_start() {
-                  document.getElementById('pc_image').style.opacity = "1";
+                function text2place_start() {
+                  document.getElementById('personscene_image').style.opacity = "0";
                 }
-
-                function strata_stop() {
-                  document.getElementById('pc_image').style.opacity = "0";
+                function text2place_stop() {
+                  document.getElementById('personscene_image').style.opacity = "1";
                 }
-                strata_stop()
+                text2place_stop()
               </script>
             </td>
 
-            <td style="padding-left:40px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:middle">
+            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:middle">
               <papertitle><font size="3">Text2Place : Affordance Aware Human Guided Placement</font></papertitle>
               <br> 
               <font size="2">
@@ -247,26 +241,26 @@
 
 
           <!-- BalancingAct -->
-          <tr onmouseout="strata_stop()" onmouseover="starta_start()">
+          <tr onmouseout="balance_stop()" onmouseover="balance_start()">
             <td style="padding-top:20;padding-bottom:20;width:20%;vertical-align:center">
               <div class="one">
-                <div class="two" id='pc_image'>
+                <div class="two" id='balanceAct_image'>
                   <img class="rounded-image" src='images/balancingAct-before.png' width="140"></div>
                   <img class="rounded-image" src='images/balancingAct-after.png' width="140">
               </div>
               <script type="text/javascript">
-                function strata_start() {
-                  document.getElementById('pc_image').style.opacity = "1";
+                function balance_start() {
+                  document.getElementById('balanceAct_image').style.opacity = "0";
                 }
 
-                function strata_stop() {
-                  document.getElementById('pc_image').style.opacity = "0";
+                function balance_stop() {
+                  document.getElementById('balanceAct_image').style.opacity = "1";
                 }
-                strata_stop()
+                balance_stop()
               </script>
             </td>
 
-            <td style="padding-left:40px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:top">
+            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:top">
               <papertitle><font size="3">Balancing Act: Distribution-Guided Debiasing in Diffusion Models</font></papertitle>
               <br> 
               <font size="2">
@@ -279,7 +273,7 @@
               </font>
               <br>
               <em>CVPR 2024</em>
-	      <br>
+	            <br>
               <a href="https://ab-34.github.io/balancing_act/">[project page]</a>
               <a href="https://arxiv.org/abs/2402.18206">[paper]</a> 
               <a href="https://github.com/rishubhpar/debiasing_gen_models">[code]</a>
@@ -313,7 +307,7 @@
                 strata_stop()
               </script>
             </td>
-            <td style="padding-left:40px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:middle">
+            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:middle">
               <papertitle><font size="3">Strata-NeRF: Neural Radiance Fields for Stratified Scenes</font></papertitle>
               <br>
               <font size="2">
@@ -345,10 +339,9 @@
             </td>
           </tr>		
 
-
 	
           <!-- Motion Style paper -->
-          <tr onmouseout="flame_stop()" onmouseover="flame_start()">
+          <tr onmouseout="motion_stop()" onmouseover="motion_start()">
             <td style="padding-top:20;padding-bottom:20;width:20%;vertical-align:bottom">
               <div class="one">
                 <div class="two" id='motion_image'>
@@ -366,7 +359,7 @@
                 motion_stop()
               </script>
             </td>
-            <td style="padding-left:40px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:middle">
+            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:middle">
               <papertitle><font size="3">We never go out of Style: Motion Disentanglement by Subspace Decomposition of Latent Space</font></papertitle>
               <br>
               <font size="2">
@@ -398,8 +391,8 @@
             <td style="padding-top:20;padding-bottom:20;width:20%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='flame_image'>
-                  <img src='images/flame_after.gif' width="140"></div>
-                <img src='images/flame_before.gif' width="140">
+                  <img src='images/flame_before.gif' width="140"></div>
+                  <img src='images/flame_after.gif' width="140">
               </div>
               <script type="text/javascript">
                 function flame_start() {
@@ -412,7 +405,7 @@
                 flame_stop()
               </script>
             </td>
-            <td style="padding-left:40px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:middle">
+            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:middle">
               <papertitle><font size="3">Everything is in the Latent Space: Attribute Style Editing and Attribute Style Manipulation
                 by StyleGAN Latent Space Exploration</font></papertitle>
               <br>
@@ -457,7 +450,7 @@
                 hsr_stop()
               </script>
             </td>
-            <td style="padding-left:40px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:middle">
+            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:middle">
               <papertitle><font size="3">Hierarchical Semantic Regularization of Latent Spaces in StyleGANs</font></papertitle>
               <br>
               <font size="2">
@@ -875,6 +868,8 @@
 
     </tr>
   </table>
+
+  <hr> 
 
   <tr>
     <td align="center">
