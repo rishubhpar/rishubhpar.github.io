@@ -40,14 +40,14 @@
 </head>
 
 
-<body style="background-color: whitesmoke;">
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+<body style="background-color: rgb(250, 246, 254);">
+  <table style="width:100%;max-width:850px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr style="padding:0px">
             <td style="padding:0%;width:55%;vertical-align:middle;">
-              <p style="text-align:left; font-family: 'Montserrat', sans-serif; font-weight: 800; margin-bottom: 4px;">
+              <p style="text-align:left; font-family: 'Nunito', sans-serif; font-weight: 600; margin-bottom: 4px;">
                 <font size="6">
                 Rishubh Parihar
                 </font>
@@ -80,24 +80,46 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:0px;width:100%;vertical-align:middle">
-              <p style="text-align:left; font-family: 'Montserrat', sans-serif; font-weight: 500">
+              <p style="text-align:left; font-family: 'Nunito', sans-serif; font-weight: 400">
                 <font size="3">Reviewer: </font>
                 <font size="2.5">
                 NeurIPS 2024, ECCV 2024, CVPR 2024, WACV 2024, ICCV 2023, CVPR 2023, ECCV 2022
                 </font>
               </p>
               <hr>
-
-              <p style="text-align:left; font-family: 'Montserrat', sans-serif; font-weight: 500">
-                <font size="5">
-                Publications
-                </font>
-              </p>
             </td>
-          </tr>
+          </tr> 
+
+          <!-- News -->
+          <tr>
+            <td style="padding:0px;width:100%;vertical-align:middle">
+              <p style="text-align:left; font-family: 'Nunito', sans-serif; font-weight: 400">
+                <font size="5">Recent News</font>
+              </p>
+              <ul>
+                <li> <em><font color="#888888">[Aug 24]</font></em>   AttributeDiffusion is accepted in WACV 2024 first round. </li>
+                <li> <em><font color="#888888">[Jul 24]</font></em>   I was awarded with Satish Dhawan Research Award for recent contributions on controlling image generative models. </li>
+                <li> <em><font color="#888888">[Jul 24]</font></em>   PreciseControl and Text2Place are accepted at ECCV 2024. </li>
+                <li> <em><font color="#888888">[Jul 24]</font></em>   Our CVPR 2024 paper BalancingAct on debiasing Diffusion models is covered by Times of India. </li>
+                <li> <em><font color="#888888">[Apr 24]</font></em>   Gave a talk on PreciseControl at IISc EECS Symposium 2024. </li> 
+                <li> <em><font color="#888888">[Mar 24]</font></em>   BalancingAct is accepted at CVPR 2024. </li> 
+                <li> <em><font color="#888888">[Jan 24]</font></em>   Serving as a Teaching Assistant in DS265: DLCV at IISc. </li> 
+                <li> <em><font color="#888888">[Jul 23]</font></em>   StrataNeRF got accepted in ICCV 2023. </li> 
+                <li> <em><font color="#888888">[Apr 23]</font></em>   I was awarded with the best presentation award for IISc EECS Symposium 2023, Visual Analytics Cluster. </li> 
+              </ul>
+              <hr>
+            </td>
+          </tr> 
+
         </tbody></table>
 
+        <!-- Publication details -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:collapse;margin-right:auto;margin-left:auto;"><tbody>
+          <p style="text-align:left; font-family: 'Nunito', sans-serif; font-weight: 400">
+            <font size="5">
+            Publications
+            </font>
+          </p>
           <!-- Explore diverse attributes --> 
           <tr onmouseout="attributediff_stop()" onmouseover="attributediff_start()">
             <td style="padding-top:10;padding-bottom:10;width:20%;vertical-align:middle">
@@ -117,12 +139,12 @@
               </script>
             </td>
 
-            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:middle">
+            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:top">
               <papertitle><font size="3">Exploring Attribute Variations in Style-based GANs using Diffusion Models</font></papertitle>
               <br> 
               <font size="2">
-              <strong>Rishubh Parihar</strong>,
-              Prasanna Balaji,
+              <strong>Rishubh Parihar*</strong>,
+              Prasanna Balaji*,
               Raghav Magazine,
               Sarthak Vora,
               Tejan Karmali,
@@ -135,17 +157,7 @@
               <em>WACV 2025</em> 
 	            <br>
               <a href="https://arxiv.org/pdf/2311.16052.pdf">[paper]</a> 
-              <br>
-              <p style="text-align: justify;"> 
-                 <font size="2"> We propose a novel approach to generate multiple edit variations for a given attribute such as eyeglasses and hairstyles. The approach involves training a diffusion model
-                  in the highly compressed and expressive latent space of StyleGAN models. </font>
-                 
-                 <!--  In this work, we formulate the task of diverse attribute editing by 
-                 modeling the multidimensional nature of attribute edits.  We capitalize on disentangled latent spaces of pretrained GANs and train a Denoising Diffusion 
-                 Probabilistic Model (DDPM) to learn the latent distribution for diverse edits. This leads to latent subspaces that enable diverse attribute editing. 
-                 Applying diffusion in the highly compressed latent space allows us to model rich distributions of edits within limited computational resources. 
-                 --> 
-                </p>
+              <br> 
             </td>
           </tr>		
 
@@ -168,12 +180,12 @@
               </script>
             </td>
 
-            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:middle">
+            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:top">
               <papertitle><font size="3">PreciseControl: Enhancing Text-to-Image Diffusion Models with Fine-Grained Attribute Control</font></papertitle>
               <br> 
               <font size="2">
-              <strong>Rishubh Parihar</strong>,
-              Sachidanand VS,
+              <strong>Rishubh Parihar*</strong>,
+              Sachidanand VS*,
               Sabariswaran Mani,
               Tejan Karmali,
               R. Venkatesh Babu
@@ -187,11 +199,6 @@
               <a href="https://www.youtube.com/watch?v=t9GJT1HnQhU">[video]</a> 
               <br> 
               <p></p> 
-              <p style="text-align: justify;"> 
-                 <font size="2"> We present an efficient face personalization method by injecting latent space of StyleGAN2 in text-to-image 
-                  diffusion models. Proposed method enables continuous attribute control with identity preserving personalization with a single image.
-                 </font> 
-                </p>
             </td>
           </tr>		
 
@@ -215,7 +222,7 @@
               </script>
             </td>
 
-            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:middle">
+            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:top">
               <papertitle><font size="3">Text2Place : Affordance Aware Human Guided Placement</font></papertitle>
               <br> 
               <font size="2">
@@ -232,17 +239,13 @@
               <a href="https://github.com/Harsh-Gupta9897/Text2Place">[code]</a>
               <br> 
               <p></p> 
-              <p style="text-align: justify;"> 
-                 <font size="2"> Given a background scene image and a text prompt, Text2Place obtains a plausible human placement location and realistically place a tiven human subject.
-                 </font> 
-                </p>
             </td>
           </tr>		
 
 
           <!-- BalancingAct -->
           <tr onmouseout="balance_stop()" onmouseover="balance_start()">
-            <td style="padding-top:20;padding-bottom:20;width:20%;vertical-align:center">
+            <td style="padding-top:20;padding-bottom:20;width:20%;vertical-align:bottom">
               <div class="one">
                 <div class="two" id='balanceAct_image'>
                   <img class="rounded-image" src='images/balancingAct-before.png' width="140"></div>
@@ -264,8 +267,8 @@
               <papertitle><font size="3">Balancing Act: Distribution-Guided Debiasing in Diffusion Models</font></papertitle>
               <br> 
               <font size="2">
-              <strong>Rishubh Parihar</strong>,
-              Abhijnya Bhat,
+              <strong>Rishubh Parihar*</strong>,
+              Abhijnya Bhat*,
               Saswat Mallick,
               Abhipsa Basu,
               Jogendra Nath Kundu,
@@ -279,11 +282,6 @@
               <a href="https://github.com/rishubhpar/debiasing_gen_models">[code]</a>
               <br> 
               <p></p> 
-              <p style="text-align: justify;"> 
-                 <font size="2"> We propose an distribution guidance strategy during the denoising process enabling generation of 
-                  user defined attribute distributions such as balance attribute distribution for debiasing.
-                 </font> 
-                </p>
             </td>
           </tr>		
 
@@ -293,8 +291,8 @@
             <td style="padding-top:20;padding-bottom:20;width:20%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='stratan_image'>
-                  <img src='images/stratan_after.gif' width="140"></div>
-                  <img src='images/stratan_before.gif' width="140">
+                  <img class="rounded-image" src='images/stratan_after.gif' width="140"></div>
+                  <img class="rounded-image" src='images/stratan_before.gif' width="140">
               </div>
               <script type="text/javascript">
                 function strata_start() {
@@ -307,7 +305,7 @@
                 strata_stop()
               </script>
             </td>
-            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:middle">
+            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:top">
               <papertitle><font size="3">Strata-NeRF: Neural Radiance Fields for Stratified Scenes</font></papertitle>
               <br>
               <font size="2">
@@ -327,15 +325,6 @@
               <a href="https://github.com/ankitatiisc/Strata-NeRF">[code]</a> 
               <br>
               <p></p> 
-              <p style="text-align: justify;"> 
-              <font size="2">
-              Existing NeRF approaches concentrate on modelling a single object or a single level of a scene. However, in the real world, we may capture a 
-              scene at multiple levels, resulting in a layered capture. </font>
-              
-              <!--For example, tourists usually capture a monument’s exterior structure before capturing the inner structure.  
-              We propose Strata-NeRF, a single neural radiance field that implicitly captures a scene with multiple levels. Strata-NeRF achieves this by conditioning the 
-              NeRFs on Vector Quantized (VQ) latent representations which allow sudden changes in scene structure. --> 
-              </p>
             </td>
           </tr>		
 
@@ -345,8 +334,8 @@
             <td style="padding-top:20;padding-bottom:20;width:20%;vertical-align:bottom">
               <div class="one">
                 <div class="two" id='motion_image'>
-                  <img src='images/motion_style_after.gif' width="140"></div>
-                <img src='images/motion_style_before.gif' width="140">  
+                  <img class="rounded-image" src='images/motion_style_after.gif' width="140"></div>
+                <img class="rounded-image" src='images/motion_style_before.gif' width="140">  
               </div>
               <script type="text/javascript">
                 function motion_start() {
@@ -359,7 +348,7 @@
                 motion_stop()
               </script>
             </td>
-            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:middle">
+            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:top">
               <papertitle><font size="3">We never go out of Style: Motion Disentanglement by Subspace Decomposition of Latent Space</font></papertitle>
               <br>
               <font size="2">
@@ -376,12 +365,6 @@
               <a href="https://youtu.be/ngqXK5VJGzo">[video]</a>
               <br>
               <p></p> 
-              <p style="text-align: justify;"> 
-              <font size="2">
-               We decompose motion in videos into disentangled motion component leveraging latent space of StyleGAN models. This enables several motion editing tasks in video such as 
-               selectively editing one motion, motion transfer or removing unwanted motion such as camera shake.
-              </font>
-              </p>
             </td>
           </tr>		
 
@@ -391,8 +374,8 @@
             <td style="padding-top:20;padding-bottom:20;width:20%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='flame_image'>
-                  <img src='images/flame_before.gif' width="140"></div>
-                  <img src='images/flame_after.gif' width="140">
+                  <img class="rounded-image" src='images/flame_before.gif' width="140"></div>
+                  <img class="rounded-image" src='images/flame_after.gif' width="140">
               </div>
               <script type="text/javascript">
                 function flame_start() {
@@ -405,12 +388,12 @@
                 flame_stop()
               </script>
             </td>
-            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:middle">
+            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:top">
               <papertitle><font size="3">Everything is in the Latent Space: Attribute Style Editing and Attribute Style Manipulation
                 by StyleGAN Latent Space Exploration</font></papertitle>
               <br>
               <font size="2">
-              <Strong>Rishubh Parihar </Strong>,
+              <Strong>Rishubh Parihar</Strong>,
               Ankit Dhiman,
               Tejan Karmali,
               R. Venkatesh Babu
@@ -423,11 +406,6 @@
               <a href="https://drive.google.com/file/d/1LgKowoYnaJ5sX5TAI7heGOLhGkTbZ5qS/view">[video]</a>
               <br>
               <p></p> 
-              <p style="text-align: justify;"> 
-              <font scale="2">
-              An simple and effective method for fine-grained attribute editing in StyleGANs. Given with a few (~10) image pairs, we estimate disentangled latent edit directions for attribute control. 
-              </font>
-              </p>
             </td>
           </tr>		
 
@@ -437,8 +415,8 @@
             <td style="padding-top:20;padding-bottom:20;width:20%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='hsr_image'>
-                  <img src='images/hsr_before.png' width="140"></div>
-                <img src='images/hsr_after.png' width="140">
+                  <img class="rounded-image" src='images/hsr_before.png' width="140"></div>
+                <img class="rounded-image" src='images/hsr_after.png' width="140">
               </div>
               <script type="text/javascript">
                 function hsr_start() {
@@ -450,7 +428,7 @@
                 hsr_stop()
               </script>
             </td>
-            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:middle">
+            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:top">
               <papertitle><font size="3">Hierarchical Semantic Regularization of Latent Spaces in StyleGANs</font></papertitle>
               <br>
               <font size="2">
@@ -467,12 +445,6 @@
               <br>
               <a href="https://sites.google.com/view/hsr-eccv22/">[project page]</a>
               <a href="https://arxiv.org/abs/2208.03764">[paper]</a>
-
-              <p style="text-align: justify;"> 
-              <font size="2">Introducing a hierarchical regularizer during the training of StyleGAN models to induce smoothness properties in the latent spaces. 
-              The regularizer is implemented by guiding the intermediate features of the StyleGAN with the features from the pretrained feature extractors.
-              </font>
-              </p>
             </td>
           </tr>		
           
