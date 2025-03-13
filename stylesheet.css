@@ -142,3 +142,7 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+.conf-name-text {
+  color: rgb(7, 164, 10);
+}
