@@ -11,7 +11,7 @@
 </head>  
 
 
-<head>
+<!-- <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rounded Image Example</title>
@@ -22,7 +22,7 @@
       border-radius: 15px; /* Adjust the value to control roundness */
     }
   </style>
-</head>
+</head> -->
 
 <head>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
@@ -40,13 +40,13 @@
 </head>
 
 
-<body style="background-color: rgb(255, 255, 255);">
+<body style="background-color: rgb(247, 245, 238);">
   <table style="width:100%;max-width:850px;border:20px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:0%;width:55%;vertical-align:middle;">
+          <tr style="padding:0px; background-color: rgb(247, 245, 238); border-radius: 15px;">
+            <td style="padding:20px;width:55%;vertical-align:middle;">
               <p style="text-align:left; font-family: 'Nunito', sans-serif; font-weight: 600; margin-bottom: 4px;">
                 <font size="6">
                 Rishubh Parihar
@@ -55,12 +55,12 @@
               <p style="margin-top: 4px;">
                 rishubhp@iisc.ac.in
               </p>
-              <p style="line-height:1.4; font-family: 'Nunito', sans-serif; font-weight: 300" > 
+              <p style="line-height:1.4; font-family: 'Nunito', sans-serif; font-weight: 400" > 
               I am a fourth year PhD student at IISc Bangalore, advised by <a href="http://cds.iisc.ac.in/faculty/venky/">Prof. Venkatesh Babu</a>.
               Prior to my Ph.D., I gained industry experience at Samsung Research, where I developed face editing solutions for Samsung smartphones, and at ShareChat, focusing on multimodal algorithms for content moderation. 
               I obtained BTech from IIT Delhi in Mathematics and Computing, where I worked with Prof. <a href="https://www.cse.iitd.ac.in/~pkalra/">Prem Kalra</a> on synthetic makeup transfer.   
               </p>
-              <p style="line-height:1.4; font-family: 'Nunito', sans-serif; font-weight: 300"> 
+              <p style="line-height:1.4; font-family: 'Nunito', sans-serif; font-weight: 400"> 
               I work on developing methods to enhance controllability in vision generative models, by designing interfaces beyond text to interact with these models.
               </p>
               <p style="text-align:left">
@@ -71,7 +71,9 @@
               </p>
             </td>
             <td style="padding-top:3%;padding-bottom:3%;padding-left:3%;width:40%;max-width:40%;">
-              <img class="rounded-image" src="images/dp-n.jpg"> 
+              <div class="profile-container">
+                <img class="profile-photo" src="images/dp-n.jpg"> 
+              </div>
             </td>
           </tr>
         </tbody></table>
@@ -86,7 +88,7 @@
                 <font size="5">Recent News</font>
               </p>
               <ul>
-		            <li> <font color="#888888">[Nov 24]</font>   <a href="https://rishubhpar.github.io">Compass Control</a> and <a href="https://rishubhpar.github.io">MonoPlace3D</a> accepted at CVPR 2024!! </li>
+		            <li> <font color="#888888">[Feb 25]</font>   <a href="https://rishubhpar.github.io">Compass Control</a> and <a href="https://rishubhpar.github.io">MonoPlace3D</a> accepted at CVPR 2024!! </li>
                 <li> <font color="#888888">[Nov 24]</font>   Our ECCV 2024 paper <a href="https://rishubhpar.github.io/PreciseControl.home/">PreciseControl</a> on personlization of T2I models was featured in <a href="https://timesofindia.indiatimes.com/science/dream-to-reality-iisc-system-can-bring-photos-to-life-change-its-context/articleshow/114796003.cms">Times of India</a>. </li>
                 <li> <font color="#888888">[Nov 24]</font>   Our work on generating consistent mirror reflections (<a href="https://val.cds.iisc.ac.in/reflecting-reality.github.io/">Reflecting Reality</a>) accepted at <strong>3DV 2025</strong>. </li>
                 <li> <font color="#888888">[Aug 24]</font>   Our work on generating multiple attribute edit variations <a href="https://rishubhpar.github.io/">AttributeDiffusion</a> accepted at <strong>WACV 2025</strong>. </li>
@@ -143,7 +145,8 @@
               </script>
             </td>
 
-            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:top">
+            <td style="padding:10px 40px 20px 20px;width:80%;vertical-align:middle">
+              <div style="margin-top:-10px">
               <papertitle><font size="3">MonoPlace3D: Learning 3D-Aware Object Placement for 3D Monocular Detection</font></papertitle>
               <br> 
               <font size="2">
@@ -156,8 +159,10 @@
               <br>
               <span class="conf-name-text"><strong>CVPR 2025</strong></span>
               <br>
-              <em><span style="color: rgb(58, 58, 223);">Details coming soon!</em>
+              <a href="https://rishubhpar.github.io/monoplace3D/">[project page]</a> 
+              <a href="https://arxiv.org/abs/2504.06801">[paper]</a>
               <br> 
+              </div>
             </td>
           </tr>		
 
@@ -180,7 +185,8 @@
               </script>
             </td>
 
-            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:top">
+            <td style="padding:10px 40px 20px 20px;width:80%;vertical-align:middle">
+              <div style="margin-top:-10px">
               <papertitle><font size="3">🧭 Compass Control: Multi-Object Orientation Control for Text-to-Image Generation</font></papertitle>
               <br> 
               <font size="2">
@@ -192,15 +198,16 @@
               <br>
               <span class="conf-name-text"><strong>CVPR 2025</strong></span>
               <br>
-              <em><span style="color: rgb(58, 58, 223);">Details coming soon!</em>
+              <a href="https://rishubhpar.github.io/compasscontrol">[project page]</a> 
+              <a href="https://arxiv.org/abs/2504.06752">[paper]</a>
               <br> 
-              <p></p> 
+              </div>
             </td>
           </tr>		
 
           <!-- Reflecting Reality --> 
           <tr onmouseout="attributediff_stop()" onmouseover="attributediff_start()">
-            <td style="padding-top:10;padding-bottom:10;width:20%;vertical-align:middle">
+            <td style="padding-top:20px;padding-bottom:20px;width:20%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='attributediff_image'>
                   <img class="rounded-image" src='images/reflecting-reality-after.png' width="140"></div>
@@ -213,33 +220,35 @@
                 function attributediff_stop() {
                   document.getElementById('attributediff_image').style.opacity = "0";
                 }
-              attributediff_stop()
+                attributediff_stop()
               </script>
             </td>
 
-            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:top">
-              <papertitle><font size="3">Reflecting Reality: Enabling Diffusion Models to Produce Faithful Mirror Reflections</font></papertitle>
-              <br> 
-              <font size="2">
-              Ankit Dhiman*,
-              Manan Shah*,
-              <strong>Rishubh Parihar</strong>,    
-              Yash Bhalgat,
-              Lokesh R Boregowda,
-              R Venkatesh Babu
-              </font>
-              <br>
-              <span class="conf-name-text"><strong>3DV 2025</strong></span>
+            <td style="padding:10px 40px 20px 20px;width:80%;vertical-align:middle">
+              <div style="margin-top:-10px">
+                <papertitle><font size="3">Reflecting Reality: Enabling Diffusion Models to Produce Faithful Mirror Reflections</font></papertitle>
+                <br> 
+                <font size="2">
+                Ankit Dhiman*,
+                Manan Shah*,
+                <strong>Rishubh Parihar</strong>,    
+                Yash Bhalgat,
+                Lokesh R Boregowda,
+                R Venkatesh Babu
+                </font>
+                <br>
+                <span class="conf-name-text"><strong>3DV 2025</strong></span>
 	            <br>
-              <a href="https://val.cds.iisc.ac.in/reflecting-reality.github.io/">[project page]</a> 
-              <a href="https://arxiv.org/abs/2409.14677">[paper]</a> 
-              <br> 
+                <a href="https://val.cds.iisc.ac.in/reflecting-reality.github.io/">[project page]</a> 
+                <a href="https://arxiv.org/abs/2409.14677">[paper]</a> 
+                <br> 
+              </div>
             </td>
           </tr>		
 
-          <!-- Explore diverse attributes --> 
+          <!-- Attribute Diffusion --> 
           <tr onmouseout="attributediff_stop()" onmouseover="attributediff_start()">
-            <td style="padding-top:10;padding-bottom:10;width:20%;vertical-align:middle">
+            <td style="padding-top:20px;padding-bottom:20px;width:20%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='attributediff_image'>
                   <img class="rounded-image" src='images/attributediff_after.gif' width="140"></div>
@@ -256,7 +265,8 @@
               </script>
             </td>
 
-            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:top">
+            <td style="padding:10px 40px 20px 20px;width:80%;vertical-align:middle">
+              <div style="margin-top:-10px">
               <papertitle><font size="3">Attribute Diffusion: Diffusion Driven Diverse Attribute Editing</font></papertitle>
               <br> 
               <font size="2">
@@ -275,6 +285,7 @@
               <a href="https://rishubhpar.github.io/attributediffusion/">[project page]</a>
               <a href="https://openaccess.thecvf.com/content/WACV2025/papers/Parihar_Attribute_Diffusion_Diffusion_Driven_Diverse_Attribute_Editing_WACV_2025_paper.pdf">[paper]</a> 
               <br> 
+              </div>
             </td>
           </tr>		  
 
@@ -306,7 +317,8 @@
               </script>
             </td>
 
-            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:top">
+            <td style="padding:10px 40px 20px 20px;width:80%;vertical-align:middle">
+              <div style="margin-top:-10px">
               <papertitle><font size="3">PreciseControl: Enhancing Text-to-Image Diffusion Models with Fine-Grained Attribute Control</font></papertitle>
               <br> 
               <font size="2">
@@ -325,7 +337,7 @@
               <a href="https://www.youtube.com/watch?v=t9GJT1HnQhU">[video]</a> 
               <a href="https://timesofindia.indiatimes.com/science/dream-to-reality-iisc-system-can-bring-photos-to-life-change-its-context/articleshow/114796003.cms">[news]</a>  
               <br> 
-              <p></p> 
+              </div>
             </td>
           </tr>		
 
@@ -349,7 +361,8 @@
               </script>
             </td>
 
-            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:top">
+            <td style="padding:10px 40px 20px 20px;width:80%;vertical-align:middle">
+              <div style="margin-top:-10px">
               <papertitle><font size="3">Text2Place: Affordance Aware Text Guided Human Placement</font></papertitle>
               <br> 
               <font size="2">
@@ -365,14 +378,14 @@
               <a href="https://arxiv.org/pdf/2407.15446v1">[paper]</a> 
               <a href="https://github.com/Harsh-Gupta9897/Text2Place">[code]</a>
               <br> 
-              <p></p> 
+              </div>
             </td>
           </tr>		
 
 
           <!-- BalancingAct -->
           <tr onmouseout="balance_stop()" onmouseover="balance_start()">
-            <td style="padding-top:20;padding-bottom:20;width:20%;vertical-align:bottom">
+            <td style="padding-top:20;padding-bottom:20;width:20%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='balanceAct_image'>
                   <img class="rounded-image" src='images/balancingAct-before.png' width="140"></div>
@@ -390,7 +403,8 @@
               </script>
             </td>
 
-            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:top">
+            <td style="padding:10px 40px 20px 20px;width:80%;vertical-align:middle">
+              <div style="margin-top:-10px">
               <papertitle><font size="3">Balancing Act: Distribution-Guided Debiasing in Diffusion Models</font></papertitle>
               <br> 
               <font size="2">
@@ -409,7 +423,7 @@
               <a href="https://github.com/rishubhpar/debiasing_gen_models">[code]</a>
               <a href="https://timesofindia.indiatimes.com/city/bengaluru/iisc-team-develops-method-to-reduce-bias-in-ai-images/articleshow/112119878.cms">[news]</a>
               <br> 
-              <p></p> 
+              </div>
             </td>
           </tr>		
 
@@ -441,7 +455,9 @@
                 strata_stop()
               </script>
             </td>
-            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:top">
+
+            <td style="padding:10px 40px 20px 20px;width:80%;vertical-align:middle">
+              <div style="margin-top:-10px">
               <papertitle><font size="3">Strata-NeRF: Neural Radiance Fields for Stratified Scenes</font></papertitle>
               <br>
               <font size="2">
@@ -460,7 +476,7 @@
               <a href="https://arxiv.org/abs/2308.10337">[paper]</a>
               <a href="https://github.com/ankitatiisc/Strata-NeRF">[code]</a> 
               <br>
-              <p></p> 
+              </div>
             </td>
           </tr>		
 
@@ -484,7 +500,9 @@
                 motion_stop()
               </script>
             </td>
-            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:top">
+
+            <td style="padding:10px 40px 20px 20px;width:80%;vertical-align:middle">
+              <div style="margin-top:-10px">
               <papertitle><font size="3">We never go out of Style: Motion Disentanglement by Subspace Decomposition of Latent Space</font></papertitle>
               <br>
               <font size="2">
@@ -500,7 +518,7 @@
               <a href="https://arxiv.org/abs/2306.00559">[paper]</a>
               <a href="https://youtu.be/ngqXK5VJGzo">[video]</a>
               <br>
-              <p></p> 
+              </div>
             </td>
           </tr>		
 
@@ -532,7 +550,9 @@
                 flame_stop()
               </script>
             </td>
-            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:top">
+
+            <td style="padding:10px 40px 20px 20px;width:80%;vertical-align:middle">
+              <div style="margin-top:-10px">
               <papertitle><font size="3">Everything is in the Latent Space: Attribute Style Editing and Attribute Style Manipulation
                 by StyleGAN Latent Space Exploration</font></papertitle>
               <br>
@@ -549,7 +569,7 @@
               <a href="https://arxiv.org/abs/2207.09855">[paper]</a>
               <a href="https://drive.google.com/file/d/1LgKowoYnaJ5sX5TAI7heGOLhGkTbZ5qS/view">[video]</a>
               <br>
-              <p></p> 
+              </div>
             </td>
           </tr>		
 
@@ -572,7 +592,9 @@
                 hsr_stop()
               </script>
             </td>
-            <td style="padding-left:5px;padding-right:40px;padding-top:20;padding-bottom:20;width:80%;vertical-align:top">
+
+            <td style="padding:10px 40px 20px 20px;width:80%;vertical-align:middle">
+              <div style="margin-top:-10px">
               <papertitle><font size="3">Hierarchical Semantic Regularization of Latent Spaces in StyleGANs</font></papertitle>
               <br>
               <font size="2">
@@ -589,6 +611,7 @@
               <br>
               <a href="https://sites.google.com/view/hsr-eccv22/">[project page]</a>
               <a href="https://arxiv.org/abs/2208.03764">[paper]</a>
+              </div>
             </td>
           </tr>
         </tbody>

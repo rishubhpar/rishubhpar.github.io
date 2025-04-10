@@ -146,3 +146,53 @@ span.highlight {
 .conf-name-text {
   color: rgb(7, 164, 10);
 }
+
+/* Project thumbnail styles */
+.project-cell {
+  padding: 20px 40px 40px 5px;
+  width: 80%;
+  vertical-align: middle;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.project-thumbnail {
+  margin-bottom: 15px;
+}
+
+.project-description {
+  margin: 0;
+}
+
+.rounded-image {
+  width: 90%;
+  max-width: 100%;
+  border-radius: 10%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.profile-container {
+  width: 90%;
+  max-width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.profile-photo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.5);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+}
