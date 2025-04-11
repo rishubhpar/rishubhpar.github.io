@@ -81,17 +81,17 @@ tr,
 p,
 a {
   font-family: 'Nunito', Verdana, Helvetica, sans-serif;
-  font-size: 14px
+  font-size: 16px
 }
 
 strong {
   font-family: 'Nunito', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 heading {
   font-family: 'Nunito', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 hr
@@ -109,7 +109,7 @@ hr.year_hr
 
 papertitle {
   font-family: 'Nunito', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700
 }
 
