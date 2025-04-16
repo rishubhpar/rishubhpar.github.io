@@ -144,7 +144,8 @@ span.highlight {
 }
 
 .conf-name-text {
-  color: rgb(7, 164, 10);
+  color: rgb(93, 29, 65);
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Project thumbnail styles */
@@ -170,7 +171,7 @@ span.highlight {
 }
 
 .rounded-image {
-  width: 90%;
+  width: 100%;
   max-width: 100%;
   border-radius: 10%;
   aspect-ratio: 1;
