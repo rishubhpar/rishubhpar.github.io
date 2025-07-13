@@ -108,8 +108,8 @@ hr.year_hr
 }
 
 papertitle {
-  font-family: 'Nunito', Verdana, Helvetica, sans-serif;
-  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
   font-weight: 700
 }
 
@@ -144,8 +144,9 @@ span.highlight {
 }
 
 .conf-name-text {
-  color: rgb(93, 29, 65);
-  font-family: 'Montserrat', sans-serif;
+  color: rgb(128, 125, 125);
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 500
 }
 
 /* Project thumbnail styles */

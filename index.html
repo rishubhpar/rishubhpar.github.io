@@ -76,7 +76,7 @@
             </td>
             <td style="padding-top:3%;padding-bottom:3%;padding-left:3%;width:40%;max-width:40%;">
               <div class="profile-container">
-                <img class="profile-photo" src="images/dp_pixar.png"> 
+                <img class="profile-photo" src="images/cover_photo.gif"> 
               </div>
             </td>
           </tr>
@@ -92,19 +92,21 @@
                 <font size="5">Recent News</font>
               </p>
               <ul>
-                <li> <font color="#888888">[Apr 25]</font>   I was awarded the best presentation award at <a href="https://eecs.iisc.ac.in/EECS2025/">IISc EECS Symposium 2025</a>, Visual Analytics Cluster. </li> 
+                <li> <font color="#888888">[Jun 25]</font>   Our work on <a href="https://rishubhpar.github.io/DAEdit/">Zero-Shot Depth-Aware Image Editing with Diffusion Models</a> accepted at <strong>ICCV 2025</strong>!! </li> 
+                <li> <font color="#888888">[May 25]</font>   Awarded Outstanding Reveiwer at <strong>CVPR 2025</strong>!! </li> 
+                <li> <font color="#888888">[Apr 25]</font>   Awarded best presentation award at <a href="https://eecs.iisc.ac.in/EECS2025/">IISc EECS Symposium 2025</a>, Visual Analytics Cluster. </li> 
 		            <li> <font color="#888888">[Feb 25]</font>   <a href="https://rishubhpar.github.io">Compass Control</a> and <a href="https://rishubhpar.github.io">MonoPlace3D</a> accepted at <strong>CVPR 2025</strong>!! </li>
                 <li> <font color="#888888">[Nov 24]</font>   Our ECCV 2024 paper <a href="https://rishubhpar.github.io/PreciseControl.home/">PreciseControl</a> on personlization of T2I models was featured in <a href="https://timesofindia.indiatimes.com/science/dream-to-reality-iisc-system-can-bring-photos-to-life-change-its-context/articleshow/114796003.cms">Times of India</a>. </li>
                 <li> <font color="#888888">[Nov 24]</font>   Our work on generating consistent mirror reflections (<a href="https://val.cds.iisc.ac.in/reflecting-reality.github.io/">Reflecting Reality</a>) accepted at <strong>3DV 2025</strong>. </li>
-                <li> <font color="#888888">[Aug 24]</font>   Our work on generating multiple attribute edit variations <a href="https://rishubhpar.github.io/">AttributeDiffusion</a> accepted at <strong>WACV 2025</strong>. </li>
-                <li> <font color="#888888">[Jul 24]</font>   I was awarded the prestigious <a href = "https://odaa.iisc.ac.in/prof-satish-dhawan-research-award/#:~:text=Prof%20Satish%20Dhawan%20Research%20Award%20was%20instituted%20by%20alumnus%20Swapnesh,focus%20on%20benefiting%20developing%20countries.">Satish Dhawan Research Award</a> for significant contributions towards controlling image generative models.</li>
+                <li> <font color="#888888">[Aug 24]</font>   Our work on generating multiple attribute edit variations <a href="https://rishubhpar.github.io/">(Attribute Diffusion)</a> accepted at <strong>WACV 2025</strong>. </li>
+                <li> <font color="#888888">[Jul 24]</font>   Awarded the prestigious <a href = "https://odaa.iisc.ac.in/prof-satish-dhawan-research-award/#:~:text=Prof%20Satish%20Dhawan%20Research%20Award%20was%20instituted%20by%20alumnus%20Swapnesh,focus%20on%20benefiting%20developing%20countries.">Satish Dhawan Research Award</a> for significant contributions towards controlling image generative models.</li>
                 <li> <font color="#888888">[Jul 24]</font>   Our works on fine-grained attribute control in text-to-image models (<a href="https://rishubhpar.github.io/PreciseControl.home/">PreciseControl</a>) and affordance aware human placement (<a href="https://rishubhpar.github.io/Text2Place/">Text2Place</a>) accepted at <strong>ECCV 2024</strong>. </li>
                 <li> <font color="#888888">[Jul 24]</font>   Our CVPR 2024 paper <a href="https://ab-34.github.io/balancing_act/">BalancingAct</a> on debiasing Diffusion models was featured in <a href="https://timesofindia.indiatimes.com/city/bengaluru/iisc-team-develops-method-to-reduce-bias-in-ai-images/articleshow/112119878.cms">Times of India</a>. </li>
                 <li> <font color="#888888">[Apr 24]</font>   Gave a talk on PreciseControl at <a href="https://eecs.iisc.ac.in/eecs-research-students-symposium-2024-2/">IISc EECS Symposium 2024</a>. </li> 
                 <li> <font color="#888888">[Mar 24]</font>   Our work on debiasing diffusion models with distribution guidance (<a href="https://ab-34.github.io/balancing_act/">BalancingAct</a>) accepted in <strong>CVPR 2024</strong>. </li> 
                 <li> <font color="#888888">[Jan 24]</font>   Serving as a Teaching Assistant in <strong>DS265: Deep Learning for Computer Vision</strong> at IISc. </li> 
                 <li> <font color="#888888">[Jul 23]</font>   Our work <a href="https://ankitatiisc.github.io/Strata-NeRF/">StrataNeRF</a> on reconstructing stratified scenes accepted in <strong>ICCV 2023</strong>. </li> 
-                <li> <font color="#888888">[Apr 23]</font>   I was awarded the best presentation award at <a href="https://eecs.iisc.ac.in/EECS2023/">IISc EECS Symposium 2023</a>, Visual Analytics Cluster. </li> 
+                <li> <font color="#888888">[Apr 23]</font>   Awarded the best presentation award at <a href="https://eecs.iisc.ac.in/EECS2023/">IISc EECS Symposium 2023</a>, Visual Analytics Cluster. </li> 
               </ul>
             </td>
           </tr> 
@@ -131,9 +133,45 @@
             </p> 
           </td> 
 
+          <!-- MPI - Zero-shot depth aware editing -->
+          <tr onmouseout="mpi_stop()" onmouseover="mpi_start()">
+            <td style="padding-top:20;padding-bottom:20;width:20%;vertical-align:middle">
+              <div class="one" style="padding-left:20px">
+                <div class="two" id='mpi_image'>
+                  <img class="rounded-image" src='images/mpi_before.png' width="140"></div>
+                  <img class="rounded-image" src='images/mpi_after.png' width="140">
+              </div>
+              <script type="text/javascript">
+                function mpi_start() {
+                  document.getElementById('mpi_image').style.opacity = "0";
+                }
+                function mpi_stop() {
+                  document.getElementById('mpi_image').style.opacity = "1";
+                }
+                mpi_stop()
+              </script>
+            </td>
+
+            <td style="padding:10px 40px 20px 20px;width:80%;vertical-align:middle">
+              <div style="margin-top:-10px">
+              <papertitle><font size="4">Zero-Shot Depth-Aware Image Editing with Diffusion Models</font></papertitle>
+              <br> 
+              <strong>Rishubh Parihar*</strong>,
+              Sachidanand VS*, 
+              R. Venkatesh Babu
+              <br>
+              <span class="conf-name-text"><strong>ICCV 2025</strong></span>
+              <br>
+              <a href="https://rishubhpar.github.io/DAEdit/">[project page]</a> 
+              <a href="https://rishubhpar.github.io/DAEdit/pdf/main_paper.pdf">[paper]</a>
+              </div>
+            </td>
+          </tr>		
+                    
+
           <!-- MonoPlace3D -->
           <tr onmouseout="monoplace3D_stop()" onmouseover="monoplace3D_start()">
-            <td style="padding-top:5px;padding-bottom:20;width:20%;vertical-align:middle">
+            <td style="padding-top:20px;padding-bottom:20;width:20%;vertical-align:middle">
               <div class="one" style="margin-bottom:20px;padding-left:20px">
                 <div class="two" id='monoplace_image'>
                   <img class="rounded-image" src='images/mono-place-before.png' width="200"></div>
@@ -152,7 +190,7 @@
 
             <td style="padding:10px 40px 20px 20px;width:80%;vertical-align:middle">
               <div style="margin-top:-10px">
-              <papertitle><font size="3">MonoPlace3D: Learning 3D-Aware Object Placement for 3D Monocular Detection</font></papertitle>
+              <papertitle><font size="4">MonoPlace3D: Learning 3D-Aware Object Placement for 3D Monocular Detection</font></papertitle>
               <br> 
               <strong>Rishubh Parihar*</strong>,
               Srinjay Sarkar*,
@@ -190,7 +228,7 @@
 
             <td style="padding:10px 40px 20px 20px;width:80%;vertical-align:middle">
               <div style="margin-top:-10px">
-              <papertitle><font size="3">🧭 Compass Control: Multi-Object Orientation Control for Text-to-Image Generation</font></papertitle>
+              <papertitle><font size="4">🧭 Compass Control: Multi-Object Orientation Control for Text-to-Image Generation</font></papertitle>
               <br> 
               <strong>Rishubh Parihar*</strong>,
               Vaibhav Agarwal*,
@@ -226,7 +264,7 @@
 
             <td style="padding:10px 40px 20px 20px;width:80%;vertical-align:middle">
               <div style="margin-top:-10px">
-                <papertitle><font size="3">Reflecting Reality: Enabling Diffusion Models to Produce Faithful Mirror Reflections</font></papertitle>
+                <papertitle><font size="4">Reflecting Reality: Enabling Diffusion Models to Produce Faithful Mirror Reflections</font></papertitle>
                 <br> 
                 Ankit Dhiman*,
                 Manan Shah*,
@@ -264,7 +302,7 @@
 
             <td style="padding:10px 40px 20px 20px;width:80%;vertical-align:middle">
               <div style="margin-top:-10px">
-              <papertitle><font size="3">Attribute Diffusion: Diffusion Driven Diverse Attribute Editing</font></papertitle>
+              <papertitle><font size="4">Attribute Diffusion: Diffusion Driven Diverse Attribute Editing</font></papertitle>
               <br> 
               <strong>Rishubh Parihar*</strong>,
               Prasanna Balaji*,
@@ -313,7 +351,7 @@
 
             <td style="padding:10px 40px 20px 20px;width:80%;vertical-align:middle">
               <div style="margin-top:-10px">
-              <papertitle><font size="3">PreciseControl: Enhancing Text-to-Image Diffusion Models with Fine-Grained Attribute Control</font></papertitle>
+              <papertitle><font size="4">PreciseControl: Enhancing Text-to-Image Diffusion Models with Fine-Grained Attribute Control</font></papertitle>
               <br> 
               <strong>Rishubh Parihar*</strong>,
               Sachidanand VS*,
@@ -355,7 +393,7 @@
 
             <td style="padding:10px 40px 20px 20px;width:80%;vertical-align:middle">
               <div style="margin-top:-10px">
-              <papertitle><font size="3">Text2Place: Affordance Aware Text Guided Human Placement</font></papertitle>
+              <papertitle><font size="4">Text2Place: Affordance Aware Text Guided Human Placement</font></papertitle>
               <br> 
               <strong>Rishubh Parihar</strong>,
               Harsh Gupta,
@@ -395,7 +433,7 @@
 
             <td style="padding:10px 40px 20px 20px;width:80%;vertical-align:middle">
               <div style="margin-top:-10px">
-              <papertitle><font size="3">Balancing Act: Distribution-Guided Debiasing in Diffusion Models</font></papertitle>
+              <papertitle><font size="4">Balancing Act: Distribution-Guided Debiasing in Diffusion Models</font></papertitle>
               <br> 
               <strong>Rishubh Parihar*</strong>,
               Abhijnya Bhat*,
@@ -447,7 +485,7 @@
 
             <td style="padding:10px 40px 20px 20px;width:80%;vertical-align:middle">
               <div style="margin-top:-10px">
-              <papertitle><font size="3">Strata-NeRF: Neural Radiance Fields for Stratified Scenes</font></papertitle>
+              <papertitle><font size="4">Strata-NeRF: Neural Radiance Fields for Stratified Scenes</font></papertitle>
               <br>
               Ankit Dhiman,
               R Srinath,
@@ -490,7 +528,7 @@
 
             <td style="padding:10px 40px 20px 20px;width:80%;vertical-align:middle">
               <div style="margin-top:-10px">
-              <papertitle><font size="3">We never go out of Style: Motion Disentanglement by Subspace Decomposition of Latent Space</font></papertitle>
+              <papertitle><font size="4">We never go out of Style: Motion Disentanglement by Subspace Decomposition of Latent Space</font></papertitle>
               <br>
               <Strong>Rishubh Parihar</Strong>,
               Raghav Magazine,
@@ -539,7 +577,7 @@
 
             <td style="padding:10px 40px 20px 20px;width:80%;vertical-align:middle">
               <div style="margin-top:-10px">
-              <papertitle><font size="3">Everything is in the Latent Space: Attribute Style Editing and Attribute Style Manipulation
+              <papertitle><font size="4">Everything is in the Latent Space: Attribute Style Editing and Attribute Style Manipulation
                 by StyleGAN Latent Space Exploration</font></papertitle>
               <br>
               <Strong>Rishubh Parihar</Strong>,
@@ -579,7 +617,7 @@
 
             <td style="padding:10px 40px 20px 20px;width:80%;vertical-align:middle">
               <div style="margin-top:-10px">
-              <papertitle><font size="3">Hierarchical Semantic Regularization of Latent Spaces in StyleGANs</font></papertitle>
+              <papertitle><font size="4">Hierarchical Semantic Regularization of Latent Spaces in StyleGANs</font></papertitle>
               <br>
               Tejan Karmali,
               <Strong>Rishubh Parihar</Strong>,
