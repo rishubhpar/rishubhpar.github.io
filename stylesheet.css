@@ -198,3 +198,7 @@ span.highlight {
   object-fit: cover;
   object-position: center 0%;
 }
+
+a {
+  color: rgba(48, 16, 145, 0.905);
+}
