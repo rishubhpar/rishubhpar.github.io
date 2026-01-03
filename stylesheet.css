@@ -525,25 +525,21 @@ strong {
 }
 
 .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  grid-auto-rows: auto;
+  column-count: 3;
+  column-gap: 6px;
 }
 
 .gallery-item {
-  border-radius: 6px;
+  break-inside: avoid;
+  margin-bottom: 6px;
+  border-radius: 4px;
   overflow: hidden;
   cursor: pointer;
   transition: var(--transition);
 }
 
-.gallery-item.large {
-  grid-column: span 2;
-}
-
 .gallery-item:hover {
-  transform: scale(1.02);
+  opacity: 0.9;
   box-shadow: var(--shadow-md);
 }
 
@@ -559,6 +555,22 @@ strong {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Sketches section - use grid for spanning */
+.gallery-section:last-child .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-count: unset;
+  gap: 6px;
+}
+
+.gallery-section:last-child .gallery-item {
+  margin-bottom: 0;
+}
+
+.gallery-section:last-child .gallery-item.large {
+  grid-column: span 2;
 }
 
 .placeholder-content {
@@ -669,10 +681,14 @@ strong {
   }
 
   .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   
-  .gallery-item.large {
+  .gallery-item.wide {
+    grid-column: span 2;
+  }
+  
+  .gallery-section:last-child .gallery-item.large {
     grid-column: span 2;
   }
 
@@ -698,7 +714,15 @@ strong {
     grid-template-columns: 1fr;
   }
   
-  .gallery-item.large {
+  .gallery-item.landscape {
+    grid-column: span 1;
+  }
+  
+  .gallery-section:last-child .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .gallery-section:last-child .gallery-item.large {
     grid-column: span 1;
   }
 }
