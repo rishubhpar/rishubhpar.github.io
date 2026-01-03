@@ -55,26 +55,29 @@ body {
 }
 
 .nav-container {
-  max-width: var(--max-width);
-  margin: 0 auto;
+  width: 100%;
+  padding: 0 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 80px;
 }
 
 .nav-logo {
-  font-family: 'Oswald', sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #666666;
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
 }
 
-.nav-logo:hover {
-  color: var(--accent-hover);
+.logo-image {
+  height: 68px;
+  width: auto;
+  transition: var(--transition);
+}
+
+.nav-logo:hover .logo-image {
+  opacity: 0.8;
+  transform: scale(1.05);
 }
 
 .nav-links {
@@ -84,14 +87,14 @@ body {
 
 .nav-link {
   font-family: 'Lexend', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.07rem;
   font-weight: 500;
   color: #888888;
   text-decoration: none;
   padding: 8px 0;
   position: relative;
   transition: var(--transition);
-  letter-spacing: 0.01em;
+  letter-spacing: 0.08em;
 }
 
 .nav-link::after {
@@ -150,7 +153,7 @@ body {
    ================================ */
 h1 {
   font-family: var(--font-heading);
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   font-weight: 600;
   color: var(--text-primary);
   margin-bottom: 40px;

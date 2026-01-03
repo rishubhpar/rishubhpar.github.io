@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Rishubh Parihar - Art & Photography</title>
+  <meta name="author" content="Rishubh Parihar">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Rishubh Parihar</a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">About</a>
+        <a href="index.html#research" class="nav-link">Research</a>
+        <a href="art.html" class="nav-link active">Art/Photography</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <!-- Art/Photography Section -->
+    <section id="art">
+      <h1>Art & Photography</h1>
+      <p class="art-intro">A collection of my creative work including sketches and photography.</p>
+
+      <div class="gallery-section photography-section">
+        <h2>Photography</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item wide" onclick="openLightbox('images/image2.jpeg')">
+            <img src="images/image2.jpeg" alt="Photo 2">
+          </div>
+          <div class="gallery-item" onclick="openLightbox('images/image4.jpeg')">
+            <img src="images/image4.jpeg" alt="Photo 4">
+          </div>
+          <div class="gallery-item wide" onclick="openLightbox('images/image3.jpeg')">
+            <img src="images/image3.jpeg" alt="Photo 3">
+          </div>
+          <div class="gallery-item" onclick="openLightbox('images/image6.jpeg')">
+            <img src="images/image6.jpeg" alt="Photo 6">
+          </div>
+          <div class="gallery-item wide" onclick="openLightbox('images/image6.JPG')">
+            <img src="images/image6.JPG" alt="Photo">
+          </div>
+          <div class="gallery-item" onclick="openLightbox('images/image8.jpeg')">
+            <img src="images/image8.jpeg" alt="Photo 8">
+          </div>
+          <div class="gallery-item wide" onclick="openLightbox('images/image9.jpeg')">
+            <img src="images/image9.jpeg" alt="Photo 9">
+          </div>
+          <div class="gallery-item" onclick="openLightbox('images/image10.jpeg')">
+            <img src="images/image10.jpeg" alt="Photo 10">
+          </div>
+          <div class="gallery-item" onclick="openLightbox('images/image13.jpeg')">
+            <img src="images/image13.jpeg" alt="Photo 13">
+          </div>
+          <div class="gallery-item" onclick="openLightbox('images/image14.JPG')">
+            <img src="images/image14.JPG" alt="Photo 14">
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-section sketches-section">
+        <h2>Sketches</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item" onclick="openLightbox('images/sketch2.jpg')">
+            <img src="images/sketch2.jpg" alt="Sketch 2">
+          </div>
+          <div class="gallery-item" onclick="openLightbox('images/sketch3.jpg')">
+            <img src="images/sketch3.jpg" alt="Sketch 3">
+          </div>
+          <div class="gallery-item" onclick="openLightbox('images/sketch7.jpg')">
+            <img src="images/sketch7.jpg" alt="Sketch 7">
+          </div>
+          <div class="gallery-item large" onclick="openLightbox('images/sketch5.jpeg')">
+            <img src="images/sketch5.jpeg" alt="Sketch 5">
+          </div>
+          <div class="gallery-item" onclick="openLightbox('images/sketch6.jpg')">
+            <img src="images/sketch6.jpg" alt="Sketch 6">
+          </div>
+          <div class="gallery-item" onclick="openLightbox('images/sketch4.jpeg')">
+            <img src="images/sketch4.jpeg" alt="Sketch 4">
+          </div>
+          <div class="gallery-item large" onclick="openLightbox('images/sketch8.png')">
+            <img src="images/sketch8.png" alt="Sketch 8">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="Enlarged image">
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Website template inspired by <a href="https://jonbarron.info/">Jon Barron</a> and <a href="https://www.matthewtancik.com/">Matthew Tancik</a></p>
+  </footer>
+
+  <script>
+    // Lightbox functionality
+    function openLightbox(src) {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      lightboxImg.src = src;
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      const lightbox = document.getElementById('lightbox');
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    // Close lightbox with Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeLightbox();
+      }
+    });
+  </script>
+</body>
+</html>
