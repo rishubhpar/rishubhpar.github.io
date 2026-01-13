@@ -692,6 +692,10 @@ strong {
     gap: 12px;
   }
 
+  .logo-image {
+    height: 50px;
+  }
+
   .nav-links {
     gap: 24px;
   }
@@ -741,6 +745,10 @@ strong {
 }
 
 @media (max-width: 480px) {
+  .logo-image {
+    height: 40px;
+  }
+
   .nav-links {
     gap: 16px;
   }
