@@ -28,20 +28,19 @@
 
     <!-- About Section -->
     <section id="about" class="tab-content active">
+      <div class="photo-backdrop" id="photo-backdrop"></div>
+      <div class="backdrop-vignette"></div>
       <div class="about-header">
         <div class="about-text">
           <h1 class="name-heading">Rishubh Parihar</h1>
           <p class="bio">
-            I am a final year PhD student at IISc Bangalore, advised by <a href="http://cds.iisc.ac.in/faculty/venky/">Prof. Venkatesh Babu</a>. I work on developing methods to enhance controllability in vision generative models by designing interfaces beyond text to interact with these models.
+            I am a final year PhD student at IISc Bangalore, advised by <a href="http://cds.iisc.ac.in/faculty/venky/">Prof. Venkatesh Babu</a>. I work on developing methods to enhance controllability in vision generative models by designing interfaces beyond text to interact with these models. My recent work has been in close collaboration with <a href="https://orpatashnik.github.io/">Or Patashnik</a>.
           </p>
           <p class="bio">
             I spent an amazing summer at Snap Research working on controllable image editing. Prior to my Ph.D., I gained industry experience at Samsung Research, where I developed face editing solutions for Samsung smartphones, and at ShareChat, focusing on multimodal algorithms for content moderation.
           </p>
           <p class="bio">
               I obtained B.Tech from IIT Delhi in Mathematics and Computing, where I worked with Prof. <a href="https://www.cse.iitd.ac.in/~pkalra/">Prem Kalra</a> on synthetic makeup transfer.
-              </p>
-          <p class="bio" style="font-weight: 600; color: #c96a3a;">
-              [New] I am interested in an industrial full-time research position. Please feel free to connect.
               </p>
           <div class="social-links">
             <a href="mailto:rishubhp@iisc.ac.in">Email</a>
@@ -62,6 +61,7 @@
       <div class="section">
         <h2>Recent News</h2>
         <ul class="news-list">
+          <li><span class="date">[Jun 26]</span>Our paper on <a href="https://dont-settle-at-the-mode.github.io/">Mitigating Diversity Collapse in Flow models</a> accepted at <strong>ECCV 2026</strong>!</li>
           <li><span class="date">[May 26]</span>Awarded Outstanding Reviewer at <strong>CVPR 2026</strong>!</li>
 		  <li><span class="date">[Apr 26]</span>Gave a Talk on controllable generative models at Adobe Research, USA</li>
           <li><span class="date">[Feb 26]</span><a href="https://snap-research.github.io/kontinuouskontext/">Kontinuous Kontext</a> and <a href="https://seethrough3d.github.io/">SeeThrough3D</a> accepted at <strong>CVPR 2026</strong>!</li>
@@ -489,6 +489,32 @@
       lightbox.classList.remove('active');
       document.body.style.overflow = '';
     }
+
+    // Photo backdrop initialization
+    (function() {
+      const images = [
+        'images/image2.jpeg', 'images/image3.jpeg', 'images/image4.jpeg',
+        'images/image6.JPG', 'images/image8.jpeg', 'images/image9.jpeg',
+        'images/image10.jpeg', 'images/image13.jpeg', 'images/image14.JPG',
+        'images/image15.JPG', 'images/image16.JPG', 'images/image17.JPG',
+        'images/image18.JPG', 'images/image19.jpg', 'images/image20.JPG',
+        'images/image21.JPG'
+      ];
+      const backdrop = document.getElementById('photo-backdrop');
+      if (!backdrop) return;
+      const shuffled = [...images].sort(() => Math.random() - 0.5);
+      for (let i = 0; i < 220; i++) {
+        const tile = document.createElement('div');
+        tile.className = 'backdrop-tile';
+        const rot = (Math.random() - 0.5) * 10;
+        tile.style.transform = `rotate(${rot.toFixed(1)}deg)`;
+        const img = document.createElement('img');
+        img.src = shuffled[i % shuffled.length];
+        img.alt = '';
+        tile.appendChild(img);
+        backdrop.appendChild(tile);
+      }
+    })();
 
     // Close lightbox with Escape key
     document.addEventListener('keydown', function(e) {
